@@ -12,10 +12,12 @@ How to use:
 
 1) create a .env file with the following information that can be obtained from https://platform.openai.com/login/ and https://app.pinecone.io/:
 
+```
 OPENAI_API_KEY=
 PINECONE_API_KEY=
 PINECONE_ENVIRONMENT=
 PINECONE_INDEX_NAME=
+```
 
 2) running setupnbot.py uses a website scraper and creates the pinecone vector file
 
