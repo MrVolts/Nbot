@@ -10,7 +10,7 @@ pip install -qU bs4 tiktoken openai langchain pinecone-client[grpc]
 
 How to use:
 
-1) create a .env file with the following information that can be obtained from https://platform.openai.com/login/ and https://app.pinecone.io/:
+1) create a .env file with the following information that can be obtained from https://platform.openai.com/login/ and https://app.pinecone.io/ :
 
 ```
 OPENAI_API_KEY=
