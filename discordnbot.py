@@ -50,7 +50,7 @@ def create_embedding(text):
     res = openai.Embedding.create(input=[text], engine=embed_model)
     return res['data'][0]['embedding']
 
-def query_pinecone(embedding, top_k=5, include_metadata=True):
+def query_pinecone(embedding, top_k=7, include_metadata=True):
     res = index.query(embedding, top_k=top_k, include_metadata=include_metadata)
     return res['matches']
 
@@ -59,11 +59,9 @@ def ask_question(query):
     matches = query_pinecone(xq)
     contexts = [item['metadata']['text'] for item in matches]
     augmented_query = "\n\n---\n\n".join(contexts)+"\n\n-----\n\n"+query
-    primer = f"""You are Q&A bot. A highly intelligent system that answers
-    user questions based on the information provided by the user above
-    each question. All the provided information is from a discord community called: Nomads. 
-    If the information cannot be found in the information
-    provided by the user, you truthfully say "I don't know".
+    primer = f"""
+    You are Nbot, a bot designed for the Nomads Discord community. For each user request, you will be provided with relevant information gathered from previous Discord chats
+    to help you understand the context of the inquiry. Your goal is to respond in the most accurate and relevant manner, using your best judgment while considering the context provided.
     """
     res = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -106,7 +104,6 @@ async def process_message(message):
         await message.channel.send("Sorry, something went wrong. Please try again later.")
 
         
-
 async def process_context(message):
     # Split the message by the "!ai context" string and take the second part
     prompt = message.content.split("!ai context")[1]
