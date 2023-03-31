@@ -7,6 +7,30 @@ import os
 from dotenv import load_dotenv
 import pinecone
 
+# Code for handling daily message limit
+daily_message_limit = 10
+user_message_count = {}
+
+def check_message_limit(user_id):
+    if user_id not in user_message_count:
+        user_message_count[user_id] = 0
+    if user_message_count[user_id] >= daily_message_limit:
+        return True
+    return False
+
+def increment_message_count(user_id):
+    if user_id not in user_message_count:
+        user_message_count[user_id] = 0
+    user_message_count[user_id] += 1
+    
+async def reset_message_count():
+    while True:
+        user_message_count.clear()
+        now = datetime.datetime.now()
+        next_reset = now + datetime.timedelta(days=1)
+        next_reset = next_reset.replace(hour=0, minute=0, second=0, microsecond=0)
+        await asyncio.sleep((next_reset - now).total_seconds())
+
 # Load environment variables
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -155,19 +179,24 @@ async def on_message(message):
     if message.author.id in blacklist:
         # If the message author is in the blacklist, do nothing
         return
-        # Check if the message was sent in a private channel (direct message)
     if isinstance(message.channel, discord.DMChannel):
         # If the message was sent in a direct message, do nothing
         return
-        # Check if the message starts with "!ai code"
-    if message.content.startswith("!ai context"):
-        # Process the code message using the process_code function
-        await process_context(message)
-    # Check if the message starts with "!ai"
-    elif message.content.startswith("!ai"):
-        # Process the message using the process_message function
-        await process_message(message)
+    if message.content.startswith("!ai context") or message.content.startswith("!ai"):
+        if check_message_limit(message.author.id):
+            await message.reply(f"Sorry, you have reached the daily message limit of {daily_message_limit}. The quota will refresh tomorrow.")
+        else:
+            increment_message_count(message.author.id)
+            if message.content.startswith("!ai context"):
+                await process_context(message)
+            elif message.content.startswith("!ai"):
+                await process_message(message)
 
+# Code for starting daily limit process
+@client.event
+async def on_ready():
+    print(f'{client.user} has connected to Discord!')
+    client.loop.create_task(reset_message_count())
 # Discord token
 client.run(discord_token)
 
