@@ -18,6 +18,7 @@ OPENAI_API_KEY=
 PINECONE_API_KEY=
 PINECONE_ENVIRONMENT=
 PINECONE_INDEX_NAME=
+DISCORD_TOKEN=
 ```
 
 2) running setupnbot.py uses all the json files inside sourcesnbot.py
