@@ -1,12 +1,13 @@
 THIS IS A (WORKING) PROTOTYPE:
 
 Issues:
-Website scraper needs a lot of work
+Bot code is a rush job atm, works but not the cleanest looking
 
 dependancies that I can remember:
 
 pip install python-dotenv
 pip install -qU bs4 tiktoken openai langchain pinecone-client[grpc]
+pip install discord
 
 How to use:
 
@@ -19,7 +20,7 @@ PINECONE_ENVIRONMENT=
 PINECONE_INDEX_NAME=
 ```
 
-2) running setupnbot.py uses a website scraper and creates the pinecone vector file
+2) running setupnbot.py uses all the json files inside sourcesnbot.py
 
 3) asknbot.py file can be edited and ran with your question
 

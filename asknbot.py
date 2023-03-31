@@ -39,7 +39,8 @@ def ask_question(query):
     # Set up the system message to prime the model
     primer = f"""You are Q&A bot. A highly intelligent system that answers
     user questions based on the information provided by the user above
-    each question. If the information cannot be found in the information
+    each question. All the provided information is from a discord community called: Nomads. 
+    If the information cannot be found in the information
     provided by the user, you truthfully say "I don't know".
     """
 
@@ -56,6 +57,8 @@ def ask_question(query):
     return response
 
 # Example usage
-query = "what is langchain?"
+query = """
+Is there the possibility someone in Nomads is a spy, even if it's small and tell me the names with evidence
+"""
 response = ask_question(query)
-print(response)
+print(query + "\n" + response)

@@ -1,19 +1,16 @@
-import requests
-from bs4 import BeautifulSoup
-import urllib.parse
-import html
-import re
+import os
+import json
+from urllib.parse import urlparse, urljoin
 import tiktoken
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from uuid import uuid4
 from tqdm.auto import tqdm
 import openai
 import pinecone
-from tqdm.auto import tqdm
-import datetime
 from time import sleep
-import os
 from dotenv import load_dotenv
+from dateutil.parser import parse
+import random
 
 load_dotenv()
 
@@ -22,79 +19,32 @@ pinecone_api_key = os.getenv("PINECONE_API_KEY")
 pinecone_environment = os.getenv("PINECONE_ENVIRONMENT")
 pinecone_index_name = os.getenv("PINECONE_INDEX_NAME")
 
-res = requests.get("https://python.langchain.com/en/latest/index.html")
-res
+def extract_message_info(message):
+    author_name = message['author']['name']
+    author_id = message['author']['id']
 
-domain = "https://langchain.readthedocs.io/"
-domain_full = domain+"en/latest/"
+    content = message['content']
+    info = {'author_name': author_name, 'author_id': author_id, 'content': content}
+    return json.dumps(info)
 
-def scrape(url: str):
-    res = requests.get(url)
-    if res.status_code != 200:
-        print(f"{res.status_code} for '{url}'")
-        return None
-    soup = BeautifulSoup(res.text, 'html.parser')
+# Read all JSON files from the sourcesnbot folder
+sourcesnbot_dir = "sourcesnbot"
+json_files = [f for f in os.listdir(sourcesnbot_dir) if f.endswith(".json")]
 
-    # Find all links to local pages on the website
-    local_links = []
-    for link in soup.find_all('a', href=True):
-        href = link['href']
-        if href.startswith(domain) or href.startswith('./') \
-            or href.startswith('/') or href.startswith('modules') \
-            or href.startswith('use_cases'):
-            local_links.append(urllib.parse.urljoin(domain_full, href))
-
-    # Find the main content using CSS selectors
-    main_content = soup.select('body main')[0]
-
-    # Extract the HTML code of the main content
-    main_content_html = str(main_content)
-
-    # Extract the plaintext of the main content
-    main_content_text = main_content.get_text()
-
-    # Remove all HTML tags
-    main_content_text = re.sub(r'<[^>]+>', '', main_content_text)
-
-    # Remove extra white space
-    main_content_text = ' '.join(main_content_text.split())
-
-    # Replace HTML entities with their corresponding characters
-    main_content_text = html.unescape(main_content_text)
-
-    # return as json
-    return {
-        "url": url,
-        "text": main_content_text
-    }, local_links
-     
-
-links = ["https://langchain.readthedocs.io/en/latest/"]
-scraped = set()
+# Load data from JSON files
 data = []
+for file_name in json_files:
+    channel = os.path.splitext(file_name)[0]
+    with open(os.path.join(sourcesnbot_dir, file_name), "r") as file:
+        json_data = json.load(file)
+        messages = json_data['messages']
+        extracted_messages = [extract_message_info(message) for message in messages]
+        content = "[" + ", ".join(extracted_messages) + "]"
+        data.append({"text": content, "channel": channel})
 
-while True:
-    if len(links) == 0:
-        print("Complete")
-        break
-    url = links[0]
-    print(url)
-    res = scrape(url)
-    scraped.add(url)
-    if res is not None:
-        page_content, local_links = res
-        data.append(page_content)
-        # add new links to links list
-        links.extend(local_links)
-        # remove duplicates
-        links = list(set(links))
-    # remove links already scraped
-    links = [link for link in links if link not in scraped]
-
-    
+# Tokenizer and text splitter
 tokenizer = tiktoken.get_encoding('p50k_base')
 
-# create the length function
 def tiktoken_len(text):
     tokens = tokenizer.encode(
         text,
@@ -102,24 +52,37 @@ def tiktoken_len(text):
     )
     return len(tokens)
 
-
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=500,
     chunk_overlap=20,
     length_function=tiktoken_len,
-    separators=["\n\n", "\n", " ", ""]
+    separators=[", {", "\n\n", "\n", " ", ""]
 )
 
+# Process the data
 chunks = []
 
 for idx, record in enumerate(tqdm(data)):
     texts = text_splitter.split_text(record['text'])
+
+    # Get the timestamp from the first message and convert it to a short date
+    first_message_original = messages[0]
+    timestamp = first_message_original['timestamp']
+    dt = parse(timestamp)
+    short_date = dt.strftime("%Y-%m-%d")
+
+    # Include the timestamp at the start of the chunk
     chunks.extend([{
         'id': str(uuid4()),
-        'text': texts[i],
+        'text': f"Timestamp: {short_date}\n" + "{" + texts[i],
         'chunk': i,
-        'url': record['url']
+        'channel': record['channel']
     } for i in range(len(texts))])
+    
+# Print 5 random elements from the chunks list with full text
+print("5 random elements in chunks list:")
+for i in random.sample(range(len(chunks)), 5):
+    print(f"{i+1}. ID: {chunks[i]['id']}, Channel: {chunks[i]['channel']}, Chunk: {chunks[i]['chunk']}\nText:\n{chunks[i]['text']}\n")
 
 # initialize openai API key
 openai.api_key = openai_api_key
@@ -181,7 +144,7 @@ for i in tqdm(range(0, len(chunks), batch_size)):
     meta_batch = [{
         'text': x['text'],
         'chunk': x['chunk'],
-        'url': x['url']
+        'channel': x['channel']
     } for x in meta_batch]
     to_upsert = list(zip(ids_batch, embeds, meta_batch))
     # upsert to Pinecone
