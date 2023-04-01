@@ -25,9 +25,24 @@ def query_pinecone(embedding, top_k=5, include_metadata=True):
     res = index.query(embedding, top_k=top_k, include_metadata=include_metadata)
     return res['matches']
 
+def extract_keywords(question):
+    prompt = f"Identify the most relevant keywords from the following question that will help retrieve the best answer. Provide a comma-separated list of these keywords:\n{question}"
+    res = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ]
+    )
+    keywords = res['choices'][0]['message']['content']
+    return keywords.strip().split(',')
+
 def ask_question(query):
-    # Create the query embedding
-    xq = create_embedding(query)
+    # Extract keywords and create the query embedding
+    keywords = extract_keywords(query)
+    print("Keywords used:", ', '.join(keywords)+ "\n")
+    keyword_query = ' '.join(keywords)
+    xq = create_embedding(keyword_query)
 
     # Retrieve relevant contexts from Pinecone
     matches = query_pinecone(xq)
@@ -36,12 +51,14 @@ def ask_question(query):
     contexts = [item['metadata']['text'] for item in matches]
     augmented_query = "\n\n---\n\n".join(contexts)+"\n\n-----\n\n"+query
 
+    # Print the prompt given to GPT-3.5
+    print("Prompt given to GPT-3.5:")
+    print(augmented_query)
+    print("\n")
+
     # Set up the system message to prime the model
-    primer = f"""You are Q&A bot. A highly intelligent system that answers
-    user questions based on the information provided by the user above
-    each question. All the provided information is from a discord community called: Nomads. 
-    If the information cannot be found in the information
-    provided by the user, you truthfully say "I don't know".
+    primer = f"""You are Nbot, a bot designed for the Nomads Discord community. For each user request, you will be provided with relevant information gathered from previous Discord chats
+    to help you understand the context of the inquiry. Your goal is to respond in the most accurate and relevant manner, using your best judgment while considering the context provided.
     """
 
     # Send the query to the chatbot
@@ -56,9 +73,10 @@ def ask_question(query):
     response = res['choices'][0]['message']['content']
     return response
 
+
 # Example usage
 query = """
-Is there the possibility someone in Nomads is a spy, even if it's small and tell me the names with evidence
+Why was tada banned?
 """
 response = ask_question(query)
-print(query + "\n" + response)
+print("Answer" + "\n" + response)

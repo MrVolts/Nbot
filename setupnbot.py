@@ -65,16 +65,10 @@ chunks = []
 for idx, record in enumerate(tqdm(data)):
     texts = text_splitter.split_text(record['text'])
 
-    # Get the timestamp from the first message and convert it to a short date
-    first_message_original = messages[0]
-    timestamp = first_message_original['timestamp']
-    dt = parse(timestamp)
-    short_date = dt.strftime("%Y-%m-%d")
-
     # Include the timestamp at the start of the chunk
     chunks.extend([{
         'id': str(uuid4()),
-        'text': f"Timestamp: {short_date}\n" + "{" + texts[i],
+        'text': "{" + texts[i],
         'chunk': i,
         'channel': record['channel']
     } for i in range(len(texts))])
