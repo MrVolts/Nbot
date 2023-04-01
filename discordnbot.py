@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import pinecone
 
 # Code for handling daily message limit
-daily_message_limit = 15
+daily_message_limit = 10
 user_message_count = {}
 
 def check_message_limit(user_id):

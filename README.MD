@@ -2,6 +2,7 @@ THIS IS A (WORKING) PROTOTYPE:
 
 Issues:
 Bot code is a rush job atm, works but not the cleanest looking
+discord bot repeats the open ai code multiple times, can turn into just one function
 
 dependancies that I can remember:
 
