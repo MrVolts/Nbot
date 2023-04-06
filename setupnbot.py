@@ -1,6 +1,5 @@
 import os
 import datetime
-from urllib.parse import urlparse, urljoin
 import tiktoken
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from uuid import uuid4
@@ -11,9 +10,7 @@ from time import sleep
 from dotenv import load_dotenv
 from dateutil.parser import parse
 import random
-from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData
 from scrapers.webscraper import WebScraper
-from scrapers.jsonscraper import get_json_data
 from database.database_handler import DatabaseHandler
 
 load_dotenv()
