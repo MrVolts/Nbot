@@ -86,3 +86,13 @@ class DatabaseHandler:
                 return row['namespace']
             else:
                 return None
+            
+    def delete_block(self, block_id, namespace):
+        with self.engine.connect() as conn:
+            query = self.pinecone_blocks.delete().where(
+                and_(
+                    self.pinecone_blocks.c.block_id == block_id,
+                    self.pinecone_blocks.c.namespace == namespace
+                )
+            )
+            conn.execute(query)

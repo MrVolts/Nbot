@@ -10,8 +10,6 @@ pinecone_api_key = os.getenv("PINECONE_API_KEY")
 pinecone_environment = os.getenv("PINECONE_ENVIRONMENT")
 pinecone_index_name = os.getenv("PINECONE_INDEX_NAME")
 
-print(pinecone_api_key, pinecone_environment, pinecone_index_name)
-
 pinecone.init(api_key=pinecone_api_key, environment=pinecone_environment)
 index = pinecone_index_name
 index = pinecone.GRPCIndex(index)
@@ -103,7 +101,9 @@ def fetch_block_ids(db_handler):
 def delete_block_ids(db_handler, block_data):
     for block_id, namespace, _, _ in block_data:
         response = index.delete(ids=[block_id], namespace=namespace)
+        db_handler.delete_block(block_id, namespace)
         print(f"Deleted block ID {block_id} in namespace {namespace}.")
+
 
 
 def main():
