@@ -1,8 +1,11 @@
 THIS IS A (WORKING) PROTOTYPE:
 
 Issues:
-Bot code is a rush job atm, works but not the cleanest looking
-discord bot repeats the open ai code multiple times, can turn into just one function
+Discord Bot needs cleaning up
+
+Todo:
+Create a web application with different types of bots fed different context
+API
 
 dependancies that I can remember:
 
@@ -22,10 +25,12 @@ PINECONE_INDEX_NAME=
 DISCORD_TOKEN=
 ```
 
-2) running setupnbot.py uses all the json files inside sourcesnbot.py
+2) running setupnbot.py scrapes a given website or processes a json
 
 3) asknbot.py file can be edited and ran with your question
 
 4) running clearnbot.py cleares the vector file and starts a fresh one
+
+5) running /home/ubuntu/NomadsAI/database/database_menu.py allows you to manage pinecone database
 
 
