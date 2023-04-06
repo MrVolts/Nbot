@@ -76,7 +76,7 @@ def ask_question(query):
 
 # Example usage
 query = """
-Is mito a girl?
+What does Nomads stand for?
 """
 response = ask_question(query)
 print("Answer" + "\n" + response)
