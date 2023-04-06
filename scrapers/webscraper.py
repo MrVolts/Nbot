@@ -4,55 +4,59 @@ from datetime import datetime
 
 
 class WebScraper:
-    def __init__(self):
+
+    def __init__(self, base_url):
         self.visited_urls = set()
+        self.base_url = base_url
+
+    def clean_text(self, text):
+        soup = BeautifulSoup(text, "lxml")
+        text = soup.get_text(separator=' ', strip=True)
+        return text
 
     def get_soup(self, link):
-        """
-        Return the BeautifulSoup object for input link
-        """
         request_object = requests.get(link, auth=('user', 'pass'))
         soup = BeautifulSoup(request_object.content, 'html.parser')
         return soup
 
-    def get_status_code(self, link):
-        """
-        Return the error code for any url
-        param: link
-        """
-        try:
-            error_code = requests.get(link).status_code
-        except requests.exceptions.ConnectionError:
-            error_code = None
-        return error_code
-
-    def find_internal_urls(self, lufthansa_url, depth=0, max_depth=2):
-        all_urls_info = []
-        status_dict = {}
-        soup = self.get_soup(lufthansa_url)
+    def find_internal_urls(self, soup):
+        internal_urls = set()
         a_tags = soup.findAll("a", href=True)
 
-        if depth > max_depth:
-            return {}
-        else:
-            for a_tag in a_tags:
-                if "http" not in a_tag["href"] and "/" in a_tag["href"]:
-                    url = "http://www.lufthansa.com" + a_tag['href']
-                elif "http" in a_tag["href"]:
-                    url = a_tag["href"]
-                else:
-                    continue
+        for a_tag in a_tags:
+            if a_tag["href"].startswith(('#', 'mailto')):
+                continue
+            elif a_tag["href"].startswith('/') and not a_tag["href"].startswith('//'):
+                internal_url = self.base_url + a_tag["href"]
+            elif a_tag["href"].startswith("http") or a_tag["href"].startswith("https"):
+                internal_url = a_tag["href"]
+            else:
+                continue
 
-                if url not in self.visited_urls:
-                    self.visited_urls.add(url)
-                    status_dict["url"] = url
-                    status_dict["status_code"] = self.get_status_code(url)
-                    status_dict["timestamp"] = datetime.now()
-                    status_dict["depth"] = depth + 1
-                    all_urls_info.append(status_dict)
-        return all_urls_info
+            internal_urls.add(internal_url)
 
-    def scrape_text(self, url):
+        return internal_urls
+
+    def scrape_text(self, url, websitescraper_data, depth=0, max_depth=3):
+        if depth > max_depth or url in self.visited_urls:
+            return
+
+        self.visited_urls.add(url)
+
         soup = self.get_soup(url)
+        print(f"Scraping {url}")
+
         text = ' '.join([p.get_text() for p in soup.find_all('p')])
-        return text
+        cleaned_text = self.clean_text(text)
+        if cleaned_text:
+            websitescraper_data.append({"text": cleaned_text, "channel": "website_scraper"})
+
+        internal_urls = self.find_internal_urls(soup)
+
+        for internal_url in internal_urls:
+            self.scrape_text(internal_url, websitescraper_data, depth + 1, max_depth)
+
+        if depth == 0:
+            print(f"\nFinished scraping. Total links scraped: {len(self.visited_urls)}")
+
+

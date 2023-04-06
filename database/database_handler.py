@@ -46,7 +46,7 @@ class DatabaseHandler:
             print(str(query))
 
             result = conn.execute(query)
-            block_data = [(row['block_id'], row['namespace'], row['channel'], row['created_at']) for row in result]
+            block_data = [(row['block_id'], row['namespace'], row['channel'], row['created_at']) for row in result.fetchall()]
 
         return block_data
 

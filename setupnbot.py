@@ -23,19 +23,25 @@ pinecone_index_name = os.getenv("PINECONE_INDEX_NAME")
 
 data = []
 chunks = []
+websitescraper_data = []
 
 # Add a namespace variable (change this as needed)
 namespace = "testing"
 
-# Use the WebScraper class
-scraper = WebScraper()
+url = "https://docs.pinecone.io/docs"
 
-# Use the scrape_text method to get the text from the web page
-url = "https://example.com/"
-scraped_text = scraper.scrape_text(url)
+websitescraper_data = []
 
-# Process the scraped_text and append it to the data list
-data.append({"text": scraped_text, "channel": "website_scraper"})
+# Initialize the WebScraper class with a base_url
+base_url = "https://docs.pinecone.io"
+scraper = WebScraper(base_url)
+
+# Call the scrape_text method with the starting URL, websitescraper_data, and the desired depth
+max_depth = 1
+scraper.scrape_text(url, websitescraper_data, max_depth=max_depth)
+
+# Replace the previous appending line with the following line
+data.extend(websitescraper_data)
 
 # Get JSON data
 # json_data = get_json_data()
@@ -71,7 +77,7 @@ for idx, record in enumerate(tqdm(data)):
 
 # Print 5 random elements from the chunks list with full text
 print("5 random elements in chunks list:")
-for i in random.sample(range(len(chunks)), 1):
+for i in random.sample(range(len(chunks)), 5):
     print(f"{i+1}. ID: {chunks[i]['id']}, Channel: {chunks[i]['channel']}, Chunk: {chunks[i]['chunk']}\nText:\n{chunks[i]['text']}\n")
 
 # Initialize openai API key
@@ -146,5 +152,5 @@ for i in tqdm(range(0, len(chunks), batch_size)):
     index.upsert(vectors=to_upsert, namespace=namespace)
     
     # Use a database connection to store Pinecone block information
-for record in meta_batch:
-    db_handler.insert_block(record['id'], record['channel'], namespace=namespace, created_at=datetime.datetime.utcnow())
+    for record in meta_batch:
+        db_handler.insert_block(record['id'], record['channel'], namespace=namespace, created_at=datetime.datetime.utcnow())
