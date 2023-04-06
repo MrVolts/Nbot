@@ -21,7 +21,7 @@ def create_embedding(text):
     res = openai.Embedding.create(input=[text], engine=embed_model)
     return res['data'][0]['embedding']
 
-def query_pinecone(embedding, top_k=5, include_metadata=True):
+def query_pinecone(embedding, top_k=4, include_metadata=True):
     res = index.query(embedding, top_k=top_k, include_metadata=include_metadata)
     return res['matches']
 
@@ -76,7 +76,7 @@ def ask_question(query):
 
 # Example usage
 query = """
-Why was tada banned?
+Is mito a girl?
 """
 response = ask_question(query)
 print("Answer" + "\n" + response)

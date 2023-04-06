@@ -1,5 +1,5 @@
 import os
-import json
+import datetime
 from urllib.parse import urlparse, urljoin
 import tiktoken
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -11,6 +11,10 @@ from time import sleep
 from dotenv import load_dotenv
 from dateutil.parser import parse
 import random
+from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData
+from scrapers.webscraper import WebScraper
+from scrapers.jsonscraper import get_json_data
+from database.database_handler import DatabaseHandler
 
 load_dotenv()
 
@@ -19,28 +23,26 @@ pinecone_api_key = os.getenv("PINECONE_API_KEY")
 pinecone_environment = os.getenv("PINECONE_ENVIRONMENT")
 pinecone_index_name = os.getenv("PINECONE_INDEX_NAME")
 
-def extract_message_info(message):
-    author_name = message['author']['name']
-    author_id = message['author']['id']
 
-    content = message['content']
-    info = {'author_name': author_name, 'author_id': author_id, 'content': content}
-    return json.dumps(info)
-
-# Read all JSON files from the sourcesnbot folder
-sourcesnbot_dir = "sourcesnbot"
-json_files = [f for f in os.listdir(sourcesnbot_dir) if f.endswith(".json")]
-
-# Load data from JSON files
 data = []
-for file_name in json_files:
-    channel = os.path.splitext(file_name)[0]
-    with open(os.path.join(sourcesnbot_dir, file_name), "r") as file:
-        json_data = json.load(file)
-        messages = json_data['messages']
-        extracted_messages = [extract_message_info(message) for message in messages]
-        content = "[" + ", ".join(extracted_messages) + "]"
-        data.append({"text": content, "channel": channel})
+chunks = []
+
+# Add a namespace variable (change this as needed)
+namespace = "testing"
+
+# Use the WebScraper class
+scraper = WebScraper()
+
+# Use the scrape_text method to get the text from the web page
+url = "https://example.com/"
+scraped_text = scraper.scrape_text(url)
+
+# Process the scraped_text and append it to the data list
+data.append({"text": scraped_text, "channel": "website_scraper"})
+
+# Get JSON data
+# json_data = get_json_data()
+# data.extend(json_data)
 
 # Tokenizer and text splitter
 tokenizer = tiktoken.get_encoding('p50k_base')
@@ -59,9 +61,6 @@ text_splitter = RecursiveCharacterTextSplitter(
     separators=[", {", "\n\n", "\n", " ", ""]
 )
 
-# Process the data
-chunks = []
-
 for idx, record in enumerate(tqdm(data)):
     texts = text_splitter.split_text(record['text'])
 
@@ -72,13 +71,13 @@ for idx, record in enumerate(tqdm(data)):
         'chunk': i,
         'channel': record['channel']
     } for i in range(len(texts))])
-    
+
 # Print 5 random elements from the chunks list with full text
 print("5 random elements in chunks list:")
-for i in random.sample(range(len(chunks)), 5):
+for i in random.sample(range(len(chunks)), 1):
     print(f"{i+1}. ID: {chunks[i]['id']}, Channel: {chunks[i]['channel']}, Chunk: {chunks[i]['chunk']}\nText:\n{chunks[i]['text']}\n")
 
-# initialize openai API key
+# Initialize openai API key
 openai.api_key = openai_api_key
 
 embed_model = "text-embedding-ada-002"
@@ -92,36 +91,40 @@ res = openai.Embedding.create(
 
 index_name = pinecone_index_name
 
-# initialize connection to pinecone
+# Initialize connection to Pinecone
 pinecone.init(
     api_key=pinecone_api_key,
     environment=pinecone_environment
 )
 
-# check if index already exists (it shouldn't if this is first time)
+# Check if index already exists (it shouldn't if this is first time)
 if index_name not in pinecone.list_indexes():
-    # if does not exist, create index
+    # If does not exist, create index
     pinecone.create_index(
         index_name,
         dimension=len(res['data'][0]['embedding']),
         metric='dotproduct'
     )
-# connect to index
+# Connect to index
 index = pinecone.GRPCIndex(index_name)
-# view index stats
+# View index stats
 index.describe_index_stats()
 
-batch_size = 100  # how many embeddings we create and insert at once
+db_handler = DatabaseHandler(index)
+
+# Your existing code for processing the data
+
+batch_size = 100
 
 for i in tqdm(range(0, len(chunks), batch_size)):
-    # find end of batch
-    i_end = min(len(chunks), i+batch_size)
+    # Find end of batch
+    i_end = min(len(chunks), i + batch_size)
     meta_batch = chunks[i:i_end]
-    # get ids
+    # Get ids
     ids_batch = [x['id'] for x in meta_batch]
-    # get texts to encode
+    # Get texts to encode
     texts = [x['text'] for x in meta_batch]
-    # create embeddings (try-except added to avoid RateLimitError)
+    # Create embeddings (try-except added to avoid RateLimitError)
     try:
         res = openai.Embedding.create(input=texts, engine=embed_model)
     except:
@@ -134,12 +137,17 @@ for i in tqdm(range(0, len(chunks), batch_size)):
             except:
                 pass
     embeds = [record['embedding'] for record in res['data']]
-    # cleanup metadata
+    # Cleanup metadata
     meta_batch = [{
+        'id': x['id'],
         'text': x['text'],
         'chunk': x['chunk'],
         'channel': x['channel']
     } for x in meta_batch]
     to_upsert = list(zip(ids_batch, embeds, meta_batch))
-    # upsert to Pinecone
-    index.upsert(vectors=to_upsert)
+    # Upsert to Pinecone
+    index.upsert(vectors=to_upsert, namespace=namespace)
+    
+    # Use a database connection to store Pinecone block information
+for record in meta_batch:
+    db_handler.insert_block(record['id'], record['channel'], namespace=namespace, created_at=datetime.datetime.utcnow())

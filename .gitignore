@@ -1,2 +1,3 @@
 .env
-GPT_log.txt
+discordBot/GPT_log.txt
+database/pinecone_blocks.db
