@@ -12,6 +12,10 @@ dependancies that I can remember:
 pip install python-dotenv
 pip install -qU bs4 tiktoken openai langchain pinecone-client[grpc]
 pip install discord
+pip install datasets
+pip install git-lfs
+huggingface-cli login
+pip install huggingface_hub
 
 How to use:
 
@@ -23,6 +27,7 @@ PINECONE_API_KEY=
 PINECONE_ENVIRONMENT=
 PINECONE_INDEX_NAME=
 DISCORD_TOKEN=
+HF_API_KEY=
 ```
 
 2) running setupnbot.py scrapes a given website or processes a json

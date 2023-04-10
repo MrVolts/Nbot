@@ -4,7 +4,6 @@ import json
 def extract_message_info(message):
     author_name = message['author']['name']
     author_id = message['author']['id']
-
     content = message['content']
     info = {'author_name': author_name, 'author_id': author_id, 'content': content}
     return json.dumps(info)

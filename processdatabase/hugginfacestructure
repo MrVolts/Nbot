@@ -1,0 +1,8 @@
+repository_name/
+  ├── user1/
+  │   └── user1_data.jsonl
+  ├── user2/
+  │   └── user2_data.jsonl
+  ├── ...
+  └── userN/
+      └── userN_data.jsonl
