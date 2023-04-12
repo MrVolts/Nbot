@@ -2,12 +2,10 @@ import os
 import json
 default_save_path="../sourcesnbot/"
 GUILDNO = 711625884771287151
-search_terms = ["596713937626595382"]#,"volts"]
-file_name = "princess"
 matching_lines = []
 all_messages = []
 #list the files in default_save_path/GUILDNO
-for file in os.listdir(f"{default_save_path}{GUILDNO}"):
+for file in os.listdir(f"{default_save_path}channels"):
     print(f"reading {file}...")
     #if the file is a json file
     if file.endswith(".json"):
@@ -19,8 +17,9 @@ for file in os.listdir(f"{default_save_path}{GUILDNO}"):
 print(len(all_messages),"messages found")
 for message in all_messages:
     for term in search_terms:
-        if term.lower() in str(eval(message)["author_id"]).lower():
-            matching_lines.append(eval(message))
+        message = evaal(message)
+        if term.lower() in str(message["author_id"]).lower():
+            matching_lines.append(message)
             break
 print(len(matching_lines),"results found")
 

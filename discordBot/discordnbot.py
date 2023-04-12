@@ -89,11 +89,11 @@ async def save_messages():
                 
                 
                 # make a directory if not exists for the guild
-                if not os.path.exists(f"{default_save_path}{GUILDNO}"):
-                    os.makedirs(f"{default_save_path}{GUILDNO}")
+                if not os.path.exists(f"{default_save_path}channels"):
+                    os.makedirs(f"{default_save_path}channels")
                 # save or append the messageblock to a file, with each new item in the list being a new line
                 
-                with open(f"{default_save_path}{GUILDNO}/{channel.name}.json", "a") as f:
+                with open(f"{default_save_path}channels/{channel.name}.json", "a") as f:
                         for m in messageblock:
                             f.write(json.dumps(m)+"\n")
                 
