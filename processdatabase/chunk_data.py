@@ -7,11 +7,32 @@ from tqdm.auto import tqdm
 import json
 import random
 from tqdm.auto import tqdm
+import datetime
+
+global_chunk_counter = 0
+
+def read_chunk_counter(file_name="chunk_counter.txt"):
+    try:
+        with open(file_name, "r") as f:
+            return int(f.read().strip())
+    except FileNotFoundError:
+        return 0
+
+def write_chunk_counter(value, file_name="chunk_counter.txt"):
+    with open(file_name, "w") as f:
+        f.write(str(value))
 
 def load_input_data(input_filename):
     with open(input_filename, 'r') as f:
         text = f.read()
     return [{'text': text}]
+
+def get_input_filepaths_recursive(dir_path):
+    input_filepaths = []
+    for root, dirs, files in os.walk(dir_path):
+        for file in files:
+            input_filepaths.append(os.path.join(root, file))
+    return input_filepaths
 
 def main():
     # Define source directory
@@ -27,21 +48,25 @@ def main():
         # Load the data from the input file
         data = load_input_data(input_filepath)
 
-        # Get user_folder name
-        user_folder = os.path.splitext(os.path.basename(input_filepath))[0]
+        # Get user_folder name and source name
+        user_folder = os.path.relpath(os.path.dirname(input_filepath), source_directory)
+        source_name = os.path.splitext(os.path.basename(input_filepath))[0]
 
         # Folder and filename to store the data
-        output_filename = f'{user_folder}/{user_folder}_data.jsonl'
+        output_filename = f'{user_folder}/{source_name}_data.jsonl'
 
         # Process the input data and save it in the required format
-        process_data_and_save_output(data, user_folder, output_filename)
+        process_data_and_save_output(data, user_folder, output_filename, source_name)
 
         # Delete the processed input file
         os.remove(input_filepath)
 
-def process_data_and_save_output(data, user_folder, output_filename):
+def process_data_and_save_output(data, user_folder, output_filename, source_name):
+    global global_chunk_counter
     if isinstance(data, str):
         data = [{'text': data}]
+        
+    global_chunk_counter = read_chunk_counter()
         
     chunks = []
 
@@ -65,13 +90,17 @@ def process_data_and_save_output(data, user_folder, output_filename):
     )
         
     for idx, record in enumerate(tqdm(data)):
-        chunks.extend([{
-            'id': str(uuid4()),
-            'text': t,
-            'chunk': i,
-            'channel': user_folder
-        } for i, t in enumerate(text_splitter.split_text(record['text']))])
-
+        chunk_texts = text_splitter.split_text(record['text'])
+        for i, t in enumerate(chunk_texts):
+            chunk = {
+                'id': str(uuid4()),
+                'text': t,
+                'chunk': global_chunk_counter,
+                'source': source_name,  # Use channel_name instead of user_folder
+                'date': datetime.datetime.now().strftime('%Y%m%d-%H%M%S'),
+            }
+            chunks.append(chunk)
+            global_chunk_counter += 1
 
     # Create the user folder if it doesn't exist
     os.makedirs(user_folder, exist_ok=True)
@@ -87,11 +116,13 @@ def process_data_and_save_output(data, user_folder, output_filename):
         with open(output_filename, 'w') as f:
             for chunk in chunks:
                 f.write(json.dumps(chunk) + '\n')
+                
+    write_chunk_counter(global_chunk_counter)
 
     print(f"File: {output_filename}")
     print("5 random elements in chunks list:")
     for i in random.sample(range(len(chunks)), 5):
-        print(f"{i+1}. ID: {chunks[i]['id']}, Channel: {chunks[i]['channel']}, Chunk: {chunks[i]['chunk']}\nText:\n{chunks[i]['text']}\n")
+        print(f"{i+1}. ID: {chunks[i]['id']}, source: {chunks[i]['source']}, Chunk: {chunks[i]['chunk']}, Date: {chunks[i]['date']}\nText:\n{chunks[i]['text']}\n")
     
 
 if __name__ == "__main__":

@@ -38,9 +38,9 @@ except:
 try:
     # load the number of the last time there was an update
     with open("number.txt", "r") as f:
-        last_update = float(f.read())
+        last_update = float(f.read())#-1000000
 except:
-    last_update = 1288834802+220752000
+    last_update = 1509586802
     print("no number file detected")
 # function that runs constantly to update the database
 
@@ -50,14 +50,13 @@ async def save_messages():
     # if server has more than this number of channels being monitered, increase this number.
     channelupdatetime = list([last_update]*1000)
     while True:
-        time_updated_readable = datetime.datetime.fromtimestamp(
-            last_update).strftime('%d-%m-%Y %H:%M:%S')
-        print("saving from", time_updated_readable)
+        time_updated_readable = datetime.datetime.fromtimestamp(time.time()).strftime('%d-%m-%Y %H:%M:%S')
+        print("saving to", time_updated_readable)
         for id in added_channelids[GUILDNO]:
             channel = client.get_channel(id)
             messageblock = []
             try:
-                messages = await channel.history(limit=100000, after=datetime.datetime.fromtimestamp(channelupdatetime[added_channelids[GUILDNO].index(id)])).flatten()
+                messages = await channel.history(limit=1000000, after=datetime.datetime.fromtimestamp(channelupdatetime[added_channelids[GUILDNO].index(id)])).flatten()
                 channelupdatetime[added_channelids[GUILDNO].index(
                     id)] = time.time()
 
@@ -88,10 +87,18 @@ async def save_messages():
                 if not os.path.exists(f"{default_save_path}{GUILDNO}"):
                     os.makedirs(f"{default_save_path}{GUILDNO}")
                 # save or append the messageblock to a file, with each new item in the list being a new line
-                with open(f"{default_save_path}{GUILDNO}/{channel.name}.json", "a") as f:
-                    for item in messageblock:
+                try:
+                    with open(f"{default_save_path}{GUILDNO}/{channel.name}.json", "r") as original:
+                        data = json.load(original)
+                        data["messages"].extend(messageblock)
+                except:
+                    data = {"messages":messageblock}
+                
+                with open(f"{default_save_path}{GUILDNO}/{channel.name}.json", "w") as f:
+                    f.write(json.dumps(data,indent = 4))
+                    #for item in messageblock:
                         # write each item in the list to a new line
-                        f.write(json.dumps(item)+"\n")
+                        #f.write(json.dumps(item)+"\n")
 
                 if False:
                     # make a directory if not exists for the varible "time_updated_readable"

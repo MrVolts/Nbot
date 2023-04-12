@@ -1,3 +1,11 @@
-{"author_id": 456226577798135808, "author_name": "Deleted User", "content": "https://discord.gg/DVYR2jFETS"}
-{"author": {"id": 456226577798135808, "name": "Deleted User"}, "content": "https://discord.gg/DVYR2jFETS"}
-{"author": {"id": 456226577798135808, "name": "Deleted User"}, "content": "https://discord.gg/DVYR2jFETS"}
+{
+    "messages": [
+        {
+            "author": {
+                "id": 456226577798135808,
+                "name": "Deleted User"
+            },
+            "content": "https://discord.gg/DVYR2jFETS"
+        }
+    ]
+}
