@@ -1,2223 +1,317 @@
-{
-    "messages": [
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!help"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "<@!333888913431199746> BPs?"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@!261972352470876160> bot can't access this channel \ud83d\ude26"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "i thought the sharing bot had admin"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "nop"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "needs to have perms to talk as well"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "!catalouge"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "she's alive! <@!267029265009213456>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I need to get better at python quick"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I want to mod it a bit"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "but it works fine"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<@!333888913431199746> we need it to have the nomad picture as the bot picture"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "can do"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "either that or something more custom"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "oh right i need to add our miner"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "<@!333888913431199746> was the bp bot rolled back or summit, my miner isnt showing"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "shouldn't be"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "mmm will re upload tomorrow, cant be arsed going through that again tonight !"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!removeitem 21"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!catalogu"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "!catalouge"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "if anyone else needs bps let me know"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "is this a fake image from Freelancer? \ud83d\ude1b"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "**no**"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "<:pepelaugh:853190773604089857>"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "*totally not i swear*"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "(i didnt have an image available shhh)"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<@!265156994409693185> you have perms here too now"
-        },
-        {
-            "author": {
-                "id": 265156994409693185,
-                "name": "yup"
-            },
-            "content": "<:pog:805914284038553631>"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "if you want a ship do !catalouge and then react to whatever you want"
-        },
-        {
-            "author": {
-                "id": 265156994409693185,
-                "name": "yup"
-            },
-            "content": "oh cool, thanks!"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 265156994409693185,
-                "name": "yup"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!add"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!help"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!removeitem 7"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!removeitem 22"
-        },
-        {
-            "author": {
-                "id": 499578171067203584,
-                "name": "AssasinGecko"
-            },
-            "content": "how do I use this bot?"
-        },
-        {
-            "author": {
-                "id": 499578171067203584,
-                "name": "AssasinGecko"
-            },
-            "content": "yeah I figured it out lol"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<:goodshit:869445659428806687>"
-        },
-        {
-            "author": {
-                "id": 265156994409693185,
-                "name": "yup"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "gib"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<:gun:849764449173766174>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<:whip:852115561159720980>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "daren wake up bwoi"
-        },
-        {
-            "author": {
-                "id": 93299542836912128,
-                "name": "Darenkel"
-            },
-            "content": "I've been hanging with my nephew..."
-        },
-        {
-            "author": {
-                "id": 227129167106277376,
-                "name": "Viribus Ego Vis"
-            },
-            "content": "Is fine lol"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!removeitem 22"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 265156994409693185,
-                "name": "yup"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!removeitem 22"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!itemremove 27"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!removeitem 27"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "NO"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "i dont want this"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "no"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<:crycat:869445659856633896>"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "!catalouge"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<@!135072845196689408>"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "dam i was left out <:pepecry:853941155695820850>"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "no i removed everyones roles because i fucked them up <:sadge:869445658803863563>"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "forgot to give it back"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "ops how do i add stuff again <:Risitas:870776831672983553>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "```!additem```"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "i think you need to do !additem and then the thing youre adding no_"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "or not idk"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "!removeitem 3"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "all good works now \ud83d\udc4d"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Outdated you have the newest one in your dms already \ud83d\ude0a"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "yeah, I remembered \ud83d\ude42"
-        },
-        {
-            "author": {
-                "id": 325245519037333504,
-                "name": "Blackhawk"
-            },
-            "content": "^ size comparison for microfighter project. Dont need newest"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Yeah it's not but it'll do"
-        },
-        {
-            "author": {
-                "id": 325245519037333504,
-                "name": "Blackhawk"
-            },
-            "content": "\ud83d\udc4d"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@135072845196689408> they are both old versions"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I'll get them to you soon"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "all right \ud83d\udc4d"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!removeitem 30"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!removeitem 30"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 326411880539226124,
-                "name": "Mito"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 326411880539226124,
-                "name": "Mito"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Niccccceee!!! Migration successful"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I now run a terraria, Minecraft, discord bot from my rpi"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Coding practice is paying off"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "Nicely done!"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "!catalouge"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<@!333888913431199746> bot ded"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "turnip spelling dead"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "and bot"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<:HAhaa:869445659395239986>"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "noo"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Aight"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "resuscitated"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "xD I've done a 40% cpu overclock on my rpi and it's stable"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Had to do some pretty neat cooling though"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "so cool to watch server go brrrr"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "!catalouge"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Doh"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I'll start her up"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Sorry must have restarted the machine"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Done"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "sorry <@!261972352470876160>  I glanced right over it"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Do: !additem to add your thing and make sure everything is links, so put your bp in a message somewhere and copy link, same with image"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "gib"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Ahhh shit sorry boys I restarted it and forgot to launch it again yesterday <@220959033895550976> <@229986947727228941>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Back up"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Dam the one day it's down"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I'll create a bash script so it starts on server restart"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!a!additem"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!remove 31"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!help"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!help Help"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!help Shoptemplate"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!removeitem 31"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "!addItem"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@!220959033895550976> did you type \"yes\" at the end?"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "Did after you asked \ud83d\ude04"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 499578171067203584,
-                "name": "AssasinGecko"
-            },
-            "content": "thanks"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Bot will be down a day, I'm moving from Ubuntu desktop to Ubuntu server"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "...and ye I know no-one will likely notice but inqwiper sometimes randomly complains about it <:sadge:869445658803863563>"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "lol"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "Has it been a day yet?"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Oh boy \ud83d\ude02, it's been taking a while. I'm setting up 2 servers atm"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "ok \ud83d\ude42"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "Hopefully with infrastructure as code right <@!333888913431199746>"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "<:bignote:875015950276104252>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<:pepopirate:856993099947835440>"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "We have scheduled a meeting tomorrow at 08:00, HR will join the call as well \ud83d\ude42"
-        },
-        {
-            "author": {
-                "id": 326411880539226124,
-                "name": "Mito"
-            },
-            "content": "Man if HR saw what went on in this server they'd probably need therapy"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue\n<@!333888913431199746>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "D:: ok ok"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I'll clone the git"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Oh boy"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "on it"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "Where\u2019s the ci/cd"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "Where\u2019s the pipeline"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "https://tenor.com/view/stupid-dog-im-ballin-dribble-eustace-bagge-gif-17584937"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "ubuntu@ubuntu"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "Goddamn zoomer"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<:boomerpepe:869445659063902270>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "fuck"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I messed it up"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "arrrgrgr to sleepy for dis"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "ok I remembered to start a screen session this time"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Less go all ok"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "arrrf now I accidentaly terminated the minecraft server"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "ready to go"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<:pepopray:856633377606991872>"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "<@!333888913431199746>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "\ud83d\ude4f"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "<@!333888913431199746>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "forgot to start screen session last time oops"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "How come people are not adding their ships here? <@!340725653164916737><@!326411880539226124><@!220959033895550976><@!229986947727228941>"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "well atm its not necessary because the game is ded"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "plus meta changes if the game should lift up again"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "so i am waiting to add anything new"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "dont wanna blow up the bot with 10 different bps"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "What about Taurus? Since some might be using it tomorrow \ud83d\ude09"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "someone doesnt have it yet?"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "did i forget someone"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "dunno, maybe I have it in PM"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "i mean its not really an open fighter its redacted so, its more like to our most trusted, like you, zehtuka, etc"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "lemme send it to you then soon\u2122\ufe0f"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "https://discord.com/channels/@me/878328942342311996/886664471253254234"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "this?"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "Because it derped twice for me"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "I added mine before but it didnt register. will try again though"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!add item"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!additem"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@&802616168305131540> Meta torp setup complete <:pepopray:856633377606991872>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "not quite the normal process but fair enough hehe"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "dot"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "You have to react to it, but that's the crappy version. Varick made a good one somewhere"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!remove 30"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!removeitem"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!remove item 30"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "The bots not online xD"
-        },
-        {
-            "author": {
-                "id": 227129167106277376,
-                "name": "Viribus Ego Vis"
-            },
-            "content": "*88888888888888888-----------9"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Bro <:pepocry:869445659323944990> it's dead"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Nah protesting ain't gonna raise the dead"
-        },
-        {
-            "author": {
-                "id": 245974663665025025,
-                "name": "LeFFeDenEcklige"
-            },
-            "content": "!catalogue"
-        },
-        {
-            "author": {
-                "id": 227129167106277376,
-                "name": "Viribus Ego Vis"
-            },
-            "content": "catalogue !"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "!catalogue <:pepecry:853941155695820850> <:pepe_wheelchair:1033736536182767687>"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "!fixcatalogue"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "Dead"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "<@333888913431199746> Bing GPT really works great. Even sourcing his answer and give link as response"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "ye, just not as good at answering questions that do not involve web like write some code to do x, and I've found for some things the searches arn't that deap and just rip of one website e.g for recipies"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I still use chat GPT for more specific stuff but for finding new knowledge bing ai is king"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "I don't see the difference for code writing"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "also bing ai has more filters, like it doesn't want to describe something to an x year old"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "try inputting code"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "it does not format it"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "yeah now put it into chatgpt it does not include the whitespaces between lines"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "for example:"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "this"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "turns into this:"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "some laungages whitespaces matter luckily not for java"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "yeah that's the output not input"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "output is fine"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "just input is messy"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "mm, i need to try"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "probably to save computation power"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "i gave him some input and he succeed to read it"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "but yeah agreed awesome tech, cgpt chat is just better for long conversations"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "but I've noticed it's memory has got worse of late"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "probably to facilitate premium tier"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "yh for sure. I told you, Renz is pumping all PCU now"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "like in gpt chat I dump a ton of information but it only really seems to remember the last promt"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "But bing is free, that's why i'm happy \ud83d\ude04"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "before it remebered the whole conversation very well"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "gptchat is also free"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "you use a history like i does?"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I'm talking about this one"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "it's been downgraded"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "conversation memory isn't great any more"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "and I don't have premium, would be curious to check out if it makes a differece"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "yeah they have downgraded bing as well because the answers have frightened some peoples. Like bing said he try to hack the nuclear code"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "ye, it limits conversation size as well so it's harder to de-rail bing"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "it's sad that everything that's free has to be restricted as a few people will missuse it"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "they will be adding the ai to microsoft office apps next which will be great"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "It's a dangerous tech. Ellon Musk didn't want it to be so open"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "think how easy excel would become if it did the formulas for you"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "yeah excel is so powerfull"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I'd happily pay and host a no restrictions one"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "someone will make one eventually I think"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "or a good one at least"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "already full of open ai tutorial"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "I'm too low skills (and not enough time) to make one correctly"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "like stable diffusion an image generating ai has no restrictions, people online make lot's of test data for it and I can host it locally. As it has no restrictions it is far better at making models like humans"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "it's far better than restricted platforms like midjourney in that regard"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "and is open source"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "yup same, those guys are gigger brains"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "and there are 100's of them"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "I could create a cool stuff if i focus on it but i have other things to do for work"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<:pepocry:869445659323944990> work man always gets in the way"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "yeah your one of the biggest brains here <:pepopray:856633377606991872>"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "Oh i do interesting thing for work too and that pay, that's the difference \ud83d\ude04"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "just knowing how to use it better than most is good though"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "like we have been using this tech super early and know roughly how it works on the surface"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "Not think so. Just a despecialize guy lol"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "your knowledge of physics is amazing"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "yeah i fall in when i was kid by readind \"sciences and life\""
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "Yeah my colleagues didn't understand when i was speaking of it and now they understand lol"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I've found a similar thing a lot of people have heard of it but just saw the images online of it doing something funny/failing and never used it, if they experienced It I think they would realise how huge this is"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "My chief was very critic on it and i had to show him how amazng it is."
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "Oh just realize i am in the wrong bot spam xD"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<:pepelaugh:853190773604089857> yeah"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "!catalogue"
-        }
-    ]
-}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!help"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "<@!333888913431199746> BPs?"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@!261972352470876160> bot can't access this channel \ud83d\ude26"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "i thought the sharing bot had admin"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "nop"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "needs to have perms to talk as well"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "!catalouge"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "she's alive! <@!267029265009213456>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I need to get better at python quick"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I want to mod it a bit"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "but it works fine"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<@!333888913431199746> we need it to have the nomad picture as the bot picture"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "can do"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "either that or something more custom"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "oh right i need to add our miner"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "<@!333888913431199746> was the bp bot rolled back or summit, my miner isnt showing"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "shouldn't be"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "mmm will re upload tomorrow, cant be arsed going through that again tonight !"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!additem"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!catalogue"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!removeitem 21"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!additem"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!catalogue"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!additem"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!catalogu"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!catalogue"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "!catalouge"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "if anyone else needs bps let me know"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "is this a fake image from Freelancer? \ud83d\ude1b"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "**no**"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "<:pepelaugh:853190773604089857>"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "*totally not i swear*"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "(i didnt have an image available shhh)"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!additem"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<@!265156994409693185> you have perms here too now"}
+{"author_id": 265156994409693185, "author_name": "yup", "content": "<:pog:805914284038553631>"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "if you want a ship do !catalouge and then react to whatever you want"}
+{"author_id": 265156994409693185, "author_name": "yup", "content": "oh cool, thanks!"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 265156994409693185, "author_name": "yup", "content": "!catalogue"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!add"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!help"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!additem"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!additem"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!additem"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!removeitem 7"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!catalogue"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!additem"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!removeitem 22"}
+{"author_id": 499578171067203584, "author_name": "AssasinGecko", "content": "how do I use this bot?"}
+{"author_id": 499578171067203584, "author_name": "AssasinGecko", "content": "yeah I figured it out lol"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<:goodshit:869445659428806687>"}
+{"author_id": 265156994409693185, "author_name": "yup", "content": "!catalogue"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "gib"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<:gun:849764449173766174>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<:whip:852115561159720980>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "daren wake up bwoi"}
+{"author_id": 93299542836912128, "author_name": "Darenkel", "content": "I've been hanging with my nephew..."}
+{"author_id": 227129167106277376, "author_name": "Viribus Ego Vis", "content": "Is fine lol"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!catalogue"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!removeitem 22"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!catalogue"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!additem"}
+{"author_id": 265156994409693185, "author_name": "yup", "content": "!catalogue"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!additem"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!removeitem 22"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!catalogue"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!itemremove 27"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!removeitem 27"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!additem"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!catalogue"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "NO"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "i dont want this"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "no"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<:crycat:869445659856633896>"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "!catalouge"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "!catalogue"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<@!135072845196689408>"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "dam i was left out <:pepecry:853941155695820850>"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "no i removed everyones roles because i fucked them up <:sadge:869445658803863563>"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "forgot to give it back"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "!catalogue"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "ops how do i add stuff again <:Risitas:870776831672983553>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "```!additem```"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "!additem"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "!catalogue"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "!additem"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "i think you need to do !additem and then the thing youre adding no_"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "or not idk"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "!additem"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "!catalogue"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "!removeitem 3"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "!catalogue"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "all good works now \ud83d\udc4d"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Outdated you have the newest one in your dms already \ud83d\ude0a"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "yeah, I remembered \ud83d\ude42"}
+{"author_id": 325245519037333504, "author_name": "Blackhawk", "content": "^ size comparison for microfighter project. Dont need newest"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Yeah it's not but it'll do"}
+{"author_id": 325245519037333504, "author_name": "Blackhawk", "content": "\ud83d\udc4d"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@135072845196689408> they are both old versions"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I'll get them to you soon"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "all right \ud83d\udc4d"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!additem"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!catalogue"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!removeitem 30"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!removeitem 30"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!additem"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!catalogue"}
+{"author_id": 326411880539226124, "author_name": "Mito", "content": "!additem"}
+{"author_id": 326411880539226124, "author_name": "Mito", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Niccccceee!!! Migration successful"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I now run a terraria, Minecraft, discord bot from my rpi"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Coding practice is paying off"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "Nicely done!"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "!catalouge"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<@!333888913431199746> bot ded"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "turnip spelling dead"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "and bot"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<:HAhaa:869445659395239986>"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "noo"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Aight"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "resuscitated"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "xD I've done a 40% cpu overclock on my rpi and it's stable"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Had to do some pretty neat cooling though"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "so cool to watch server go brrrr"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "!catalouge"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Doh"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I'll start her up"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Sorry must have restarted the machine"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Done"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "sorry <@!261972352470876160>  I glanced right over it"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Do: !additem to add your thing and make sure everything is links, so put your bp in a message somewhere and copy link, same with image"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "gib"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Ahhh shit sorry boys I restarted it and forgot to launch it again yesterday <@220959033895550976> <@229986947727228941>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Back up"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Dam the one day it's down"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I'll create a bash script so it starts on server restart"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!a!additem"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!additem"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!remove 31"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!help"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!help Help"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!help Shoptemplate"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!removeitem 31"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "!addItem"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@!220959033895550976> did you type \"yes\" at the end?"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "Did after you asked \ud83d\ude04"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "!catalogue"}
+{"author_id": 499578171067203584, "author_name": "AssasinGecko", "content": "thanks"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Bot will be down a day, I'm moving from Ubuntu desktop to Ubuntu server"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "...and ye I know no-one will likely notice but inqwiper sometimes randomly complains about it <:sadge:869445658803863563>"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "lol"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "Has it been a day yet?"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Oh boy \ud83d\ude02, it's been taking a while. I'm setting up 2 servers atm"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "ok \ud83d\ude42"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "Hopefully with infrastructure as code right <@!333888913431199746>"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "<:bignote:875015950276104252>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<:pepopirate:856993099947835440>"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "We have scheduled a meeting tomorrow at 08:00, HR will join the call as well \ud83d\ude42"}
+{"author_id": 326411880539226124, "author_name": "Mito", "content": "Man if HR saw what went on in this server they'd probably need therapy"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue\n<@!333888913431199746>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "D:: ok ok"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I'll clone the git"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Oh boy"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "on it"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "Where\u2019s the ci/cd"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "Where\u2019s the pipeline"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "https://tenor.com/view/stupid-dog-im-ballin-dribble-eustace-bagge-gif-17584937"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "ubuntu@ubuntu"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "Goddamn zoomer"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<:boomerpepe:869445659063902270>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "fuck"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I messed it up"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "arrrgrgr to sleepy for dis"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "ok I remembered to start a screen session this time"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Less go all ok"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "arrrf now I accidentaly terminated the minecraft server"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "ready to go"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<:pepopray:856633377606991872>"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "<@!333888913431199746>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "\ud83d\ude4f"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "<@!333888913431199746>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "forgot to start screen session last time oops"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "How come people are not adding their ships here? <@!340725653164916737><@!326411880539226124><@!220959033895550976><@!229986947727228941>"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "well atm its not necessary because the game is ded"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "plus meta changes if the game should lift up again"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "so i am waiting to add anything new"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "dont wanna blow up the bot with 10 different bps"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "What about Taurus? Since some might be using it tomorrow \ud83d\ude09"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "someone doesnt have it yet?"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "did i forget someone"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "dunno, maybe I have it in PM"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "i mean its not really an open fighter its redacted so, its more like to our most trusted, like you, zehtuka, etc"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "lemme send it to you then soon\u2122\ufe0f"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "https://discord.com/channels/@me/878328942342311996/886664471253254234"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "this?"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "Because it derped twice for me"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "I added mine before but it didnt register. will try again though"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!add item"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!additem"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@&802616168305131540> Meta torp setup complete <:pepopray:856633377606991872>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "not quite the normal process but fair enough hehe"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "dot"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "You have to react to it, but that's the crappy version. Varick made a good one somewhere"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!remove 30"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!removeitem"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!remove item 30"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "The bots not online xD"}
+{"author_id": 227129167106277376, "author_name": "Viribus Ego Vis", "content": "*88888888888888888-----------9"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Bro <:pepocry:869445659323944990> it's dead"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Nah protesting ain't gonna raise the dead"}
+{"author_id": 245974663665025025, "author_name": "LeFFeDenEcklige", "content": "!catalogue"}
+{"author_id": 227129167106277376, "author_name": "Viribus Ego Vis", "content": "catalogue !"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "!catalogue <:pepecry:853941155695820850> <:pepe_wheelchair:1033736536182767687>"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "!fixcatalogue"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "Dead"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "<@333888913431199746> Bing GPT really works great. Even sourcing his answer and give link as response"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "ye, just not as good at answering questions that do not involve web like write some code to do x, and I've found for some things the searches arn't that deap and just rip of one website e.g for recipies"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I still use chat GPT for more specific stuff but for finding new knowledge bing ai is king"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "I don't see the difference for code writing"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "also bing ai has more filters, like it doesn't want to describe something to an x year old"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "try inputting code"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "it does not format it"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "yeah now put it into chatgpt it does not include the whitespaces between lines"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "for example:"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "this"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "turns into this:"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "some laungages whitespaces matter luckily not for java"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "yeah that's the output not input"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "output is fine"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "just input is messy"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "mm, i need to try"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "probably to save computation power"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "i gave him some input and he succeed to read it"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "but yeah agreed awesome tech, cgpt chat is just better for long conversations"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "but I've noticed it's memory has got worse of late"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "probably to facilitate premium tier"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "yh for sure. I told you, Renz is pumping all PCU now"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "like in gpt chat I dump a ton of information but it only really seems to remember the last promt"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "But bing is free, that's why i'm happy \ud83d\ude04"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "before it remebered the whole conversation very well"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "gptchat is also free"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "you use a history like i does?"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I'm talking about this one"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "it's been downgraded"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "conversation memory isn't great any more"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "and I don't have premium, would be curious to check out if it makes a differece"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "yeah they have downgraded bing as well because the answers have frightened some peoples. Like bing said he try to hack the nuclear code"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "ye, it limits conversation size as well so it's harder to de-rail bing"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "it's sad that everything that's free has to be restricted as a few people will missuse it"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "they will be adding the ai to microsoft office apps next which will be great"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "It's a dangerous tech. Ellon Musk didn't want it to be so open"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "think how easy excel would become if it did the formulas for you"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "yeah excel is so powerfull"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I'd happily pay and host a no restrictions one"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "someone will make one eventually I think"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "or a good one at least"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "already full of open ai tutorial"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "I'm too low skills (and not enough time) to make one correctly"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "like stable diffusion an image generating ai has no restrictions, people online make lot's of test data for it and I can host it locally. As it has no restrictions it is far better at making models like humans"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "it's far better than restricted platforms like midjourney in that regard"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "and is open source"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "yup same, those guys are gigger brains"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "and there are 100's of them"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "I could create a cool stuff if i focus on it but i have other things to do for work"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<:pepocry:869445659323944990> work man always gets in the way"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "yeah your one of the biggest brains here <:pepopray:856633377606991872>"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "Oh i do interesting thing for work too and that pay, that's the difference \ud83d\ude04"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "just knowing how to use it better than most is good though"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "like we have been using this tech super early and know roughly how it works on the surface"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "Not think so. Just a despecialize guy lol"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "your knowledge of physics is amazing"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "yeah i fall in when i was kid by readind \"sciences and life\""}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "Yeah my colleagues didn't understand when i was speaking of it and now they understand lol"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I've found a similar thing a lot of people have heard of it but just saw the images online of it doing something funny/failing and never used it, if they experienced It I think they would realise how huge this is"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "My chief was very critic on it and i had to show him how amazng it is."}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "Oh just realize i am in the wrong bot spam xD"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<:pepelaugh:853190773604089857> yeah"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "!catalogue"}

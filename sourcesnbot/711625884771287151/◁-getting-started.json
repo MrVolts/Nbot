@@ -1,11 +1,1 @@
-{
-    "messages": [
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "Ore Map"
-        }
-    ]
-}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "Ore Map"}

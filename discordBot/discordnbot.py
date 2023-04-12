@@ -75,39 +75,43 @@ async def save_messages():
                 if message.author.bot:
                     continue
                 data = {
-                    "author": {"id": message.author.id,
-                               "name": message.author.name},
+                    "author_id": message.author.id,
+                    "author_name": message.author.name,
                     "content": message.content,
                 }
                 if data["content"]:
                     messageblock.append(data)
                     
             if messageblock:
+                
+                
+                
+                
+                
                 # make a directory if not exists for the guild
                 if not os.path.exists(f"{default_save_path}{GUILDNO}"):
                     os.makedirs(f"{default_save_path}{GUILDNO}")
                 # save or append the messageblock to a file, with each new item in the list being a new line
-                try:
-                    with open(f"{default_save_path}{GUILDNO}/{channel.name}.json", "r") as original:
-                        data = json.load(original)
-                        data["messages"].extend(messageblock)
-                except:
-                    data = {"messages":messageblock}
                 
-                with open(f"{default_save_path}{GUILDNO}/{channel.name}.json", "w") as f:
-                    f.write(json.dumps(data,indent = 4))
-                    #for item in messageblock:
-                        # write each item in the list to a new line
-                        #f.write(json.dumps(item)+"\n")
-
+                with open(f"{default_save_path}{GUILDNO}/{channel.name}.json", "a") as f:
+                        for m in messageblock:
+                            f.write(json.dumps(m)+"\n")
+                
                 if False:
-                    # make a directory if not exists for the varible "time_updated_readable"
-                    if not os.path.exists(f"{default_save_path}{GUILDNO}/{time_updated_readable}"):
-                        os.makedirs(
-                            f"{default_save_path}{GUILDNO}/{time_updated_readable}")
-                    # save the contents of messageblock in a file that goes by the name of the channel
-                    with open(f"{default_save_path}{GUILDNO}/{time_updated_readable}/{channel.name}.json", "w") as f:
-                        json.dump((messageblock), f)  # ,indent = 4)
+                    try:
+                        with open(f"{default_save_path}{GUILDNO}/{channel.name}.json", "r") as original:
+                            data = json.load(original)
+                            data["messages"].extend(messageblock)
+                    except:
+                        data = {"messages":messageblock}
+                    
+                    with open(f"{default_save_path}{GUILDNO}/{channel.name}.json", "w") as f:
+                        f.write(json.dumps(data,indent = 4))
+                        #for item in messageblock:
+                            # write each item in the list to a new line
+                            #f.write(json.dumps(item)+"\n")
+
+
 
         last_update = time.time()
         save_number(last_update)

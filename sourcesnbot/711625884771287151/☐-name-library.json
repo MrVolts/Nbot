@@ -1,977 +1,139 @@
-{
-    "messages": [
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<@&733592888587452436> post your ingame names here once you make em"
-        },
-        {
-            "author": {
-                "id": 135072845196689408,
-                "name": "nenu"
-            },
-            "content": "Santi"
-        },
-        {
-            "author": {
-                "id": 93299542836912128,
-                "name": "Darenkel"
-            },
-            "content": "Darenkel"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "Dantian"
-        },
-        {
-            "author": {
-                "id": 328628044749078538,
-                "name": "Pergatory"
-            },
-            "content": "Feature"
-        },
-        {
-            "author": {
-                "id": 328628044749078538,
-                "name": "Pergatory"
-            },
-            "content": "is space right now"
-        },
-        {
-            "author": {
-                "id": 328628044749078538,
-                "name": "Pergatory"
-            },
-            "content": "Got it ty"
-        },
-        {
-            "author": {
-                "id": 284725145182928896,
-                "name": "Sherquack Honks"
-            },
-            "content": "CoffeeKnight"
-        },
-        {
-            "author": {
-                "id": 265156994409693185,
-                "name": "yup"
-            },
-            "content": "Yup"
-        },
-        {
-            "author": {
-                "id": 267029265009213456,
-                "name": "InqWiper"
-            },
-            "content": "Inqwiper"
-        },
-        {
-            "author": {
-                "id": 284725145182928896,
-                "name": "Sherquack Honks"
-            },
-            "content": "Coffeeknight"
-        },
-        {
-            "author": {
-                "id": 245974663665025025,
-                "name": "LeFFeDenEcklige"
-            },
-            "content": "bigdickjohnson"
-        },
-        {
-            "author": {
-                "id": 245974663665025025,
-                "name": "LeFFeDenEcklige"
-            },
-            "content": "leifoman"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "Trueturnip"
-        },
-        {
-            "author": {
-                "id": 326411880539226124,
-                "name": "Mito"
-            },
-            "content": "Mito"
-        },
-        {
-            "author": {
-                "id": 214665550440300544,
-                "name": "Tagarik"
-            },
-            "content": "Tagarik ~~but I doubt that i can be in two companies/factions at the same time~~"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "No but noted"
-        },
-        {
-            "author": {
-                "id": 197852274893127685,
-                "name": "Renz"
-            },
-            "content": "Renz"
-        },
-        {
-            "author": {
-                "id": 499578171067203584,
-                "name": "AssasinGecko"
-            },
-            "content": "Gecko"
-        },
-        {
-            "author": {
-                "id": 160821693567205376,
-                "name": "Stradh"
-            },
-            "content": "Stradh"
-        },
-        {
-            "author": {
-                "id": 160821423428861952,
-                "name": "Halpachino"
-            },
-            "content": "Halpachino"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "Vortus"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Mrvolts"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Name changed to Volts"
-        },
-        {
-            "author": {
-                "id": 102220482471800832,
-                "name": "tango"
-            },
-            "content": "Sedi"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "<@!229986947727228941> can you post your name again, Vortus doesn't appear to exist"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "wut"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "oh nvm its showing now"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "invite sent"
-        },
-        {
-            "author": {
-                "id": 245974663665025025,
-                "name": "LeFFeDenEcklige"
-            },
-            "content": "seems like the person ahs to be online, so ping me or Dantian for invites"
-        },
-        {
-            "author": {
-                "id": 201373222392954880,
-                "name": "Zog"
-            },
-            "content": "Zog"
-        },
-        {
-            "author": {
-                "id": 205760564046069761,
-                "name": "AssIn9"
-            },
-            "content": "Asinine, Atlashost (p2p high end connection for mitigation of ddos)"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "Mordrack"
-        },
-        {
-            "author": {
-                "id": 227129167106277376,
-                "name": "Viribus Ego Vis"
-            },
-            "content": "Viribusegovis\n\nIf I knew how I'd change to Viribus"
-        },
-        {
-            "author": {
-                "id": 456226577798135808,
-                "name": "Deleted User"
-            },
-            "content": "Jj"
-        },
-        {
-            "author": {
-                "id": 325245519037333504,
-                "name": "Blackhawk"
-            },
-            "content": "Blackhawkx (for now)"
-        },
-        {
-            "author": {
-                "id": 325245519037333504,
-                "name": "Blackhawk"
-            },
-            "content": "asinine"
-        },
-        {
-            "author": {
-                "id": 269927543795220480,
-                "name": "Raw Beef"
-            },
-            "content": "Seyeco"
-        },
-        {
-            "author": {
-                "id": 266169747719061515,
-                "name": "Imperiul"
-            },
-            "content": "Imperiul"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@!340725653164916737> would you mind?"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@!328628044749078538>"
-        },
-        {
-            "author": {
-                "id": 353250620678864896,
-                "name": "TinyTim"
-            },
-            "content": "Spiritnor \ud83d\ude04"
-        },
-        {
-            "author": {
-                "id": 494202013211557888,
-                "name": "Cause & effecT"
-            },
-            "content": "Hey any advice or ok with Cause"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "Cause is your name ingame?"
-        },
-        {
-            "author": {
-                "id": 337812602753122305,
-                "name": "SomeGreenBoi"
-            },
-            "content": "Caligae"
-        },
-        {
-            "author": {
-                "id": 353250620678864896,
-                "name": "TinyTim"
-            },
-            "content": "still havn't gotten any invitation ingame btw \ud83d\ude04"
-        },
-        {
-            "author": {
-                "id": 340725653164916737,
-                "name": "Dantian"
-            },
-            "content": "Just sent you one"
-        },
-        {
-            "author": {
-                "id": 189121589692989441,
-                "name": "MaarrS"
-            },
-            "content": "MaarrS"
-        },
-        {
-            "author": {
-                "id": 318238971945811980,
-                "name": "Guthixwolf"
-            },
-            "content": "Guthix"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@!318238971945811980> both sent"
-        },
-        {
-            "author": {
-                "id": 189121589692989441,
-                "name": "MaarrS"
-            },
-            "content": "\u2764\ufe0f"
-        },
-        {
-            "author": {
-                "id": 216710056031420426,
-                "name": "Boonana"
-            },
-            "content": "Boonana"
-        },
-        {
-            "author": {
-                "id": 300557660875653121,
-                "name": "SaltMinion"
-            },
-            "content": "ragnr"
-        },
-        {
-            "author": {
-                "id": 164164302121467904,
-                "name": "Yourshadow"
-            },
-            "content": "Yourshadowq"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@!216710056031420426> <@!300557660875653121> <@!164164302121467904> sent invites to you 3"
-        },
-        {
-            "author": {
-                "id": 300557660875653121,
-                "name": "SaltMinion"
-            },
-            "content": "Thanks."
-        },
-        {
-            "author": {
-                "id": 216710056031420426,
-                "name": "Boonana"
-            },
-            "content": "I havent received anything yet \ud83d\ude42"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "ohh?"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "player not found"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Player not found"
-        },
-        {
-            "author": {
-                "id": 300557660875653121,
-                "name": "SaltMinion"
-            },
-            "content": "lol"
-        },
-        {
-            "author": {
-                "id": 300557660875653121,
-                "name": "SaltMinion"
-            },
-            "content": "what"
-        },
-        {
-            "author": {
-                "id": 300557660875653121,
-                "name": "SaltMinion"
-            },
-            "content": "Hang on"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "player not found]"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "player not found"
-        },
-        {
-            "author": {
-                "id": 216710056031420426,
-                "name": "Boonana"
-            },
-            "content": "Hm strange. Thats my starbase name \ud83d\ude04"
-        },
-        {
-            "author": {
-                "id": 300557660875653121,
-                "name": "SaltMinion"
-            },
-            "content": "Mine is correct, just double checked"
-        },
-        {
-            "author": {
-                "id": 300557660875653121,
-                "name": "SaltMinion"
-            },
-            "content": "Ragnr"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "ehh"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "maybe it's cap sensitive"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "it is capital sensitive"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "my bad"
-        },
-        {
-            "author": {
-                "id": 300557660875653121,
-                "name": "SaltMinion"
-            },
-            "content": "Got it"
-        },
-        {
-            "author": {
-                "id": 216710056031420426,
-                "name": "Boonana"
-            },
-            "content": "Got mine ty"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "all invites sent sorry for delay guys"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "business is booming"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "a month ago I thought we'd be struggling for 10 xD"
-        },
-        {
-            "author": {
-                "id": 104998281716711424,
-                "name": "Redflash"
-            },
-            "content": "Redflash"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "Zehtuka"
-        },
-        {
-            "author": {
-                "id": 140183856970989568,
-                "name": "fabo"
-            },
-            "content": "fabo"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@110135050112090112> <@151410465874903042> would you mind adding your in-game names here?"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "So we can add you to the company"
-        },
-        {
-            "author": {
-                "id": 151410465874903042,
-                "name": "Meraun"
-            },
-            "content": "Meraun"
-        },
-        {
-            "author": {
-                "id": 220959033895550976,
-                "name": "Zehtuka"
-            },
-            "content": "Will need inv as well"
-        },
-        {
-            "author": {
-                "id": 151410465874903042,
-                "name": "Meraun"
-            },
-            "content": "Johnnyseven has well Johnnyseven"
-        },
-        {
-            "author": {
-                "id": 151410465874903042,
-                "name": "Meraun"
-            },
-            "content": "we left the old placeholder Company"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "ill invite you in a sec"
-        },
-        {
-            "author": {
-                "id": 290579868502982656,
-                "name": "Mordrack"
-            },
-            "content": "<:based:854343428502061086>"
-        },
-        {
-            "author": {
-                "id": 636638343852982303,
-                "name": "Hoenheim"
-            },
-            "content": "Hoenheim"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "sent"
-        },
-        {
-            "author": {
-                "id": 153084734287773696,
-                "name": "Chosenman"
-            },
-            "content": "Chosenman"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "player not found"
-        },
-        {
-            "author": {
-                "id": 153084734287773696,
-                "name": "Chosenman"
-            },
-            "content": "Wildape"
-        },
-        {
-            "author": {
-                "id": 153084734287773696,
-                "name": "Chosenman"
-            },
-            "content": "sorry"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@!691667818466508820> are you in the company?"
-        },
-        {
-            "author": {
-                "id": 468079005862592513,
-                "name": "sacul2345"
-            },
-            "content": "Sacul"
-        },
-        {
-            "author": {
-                "id": 341406176652558356,
-                "name": "zub"
-            },
-            "content": "Zub"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<@!333888913431199746>"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "on it"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@!341406176652558356> <@!468079005862592513> sent the invite, welcome to the team"
-        },
-        {
-            "author": {
-                "id": 468079005862592513,
-                "name": "sacul2345"
-            },
-            "content": "got it"
-        },
-        {
-            "author": {
-                "id": 413411119152234507,
-                "name": "Spongebob"
-            },
-            "content": "Spongebob"
-        },
-        {
-            "author": {
-                "id": 316728168432140298,
-                "name": "Willywasher"
-            },
-            "content": "williewasher"
-        },
-        {
-            "author": {
-                "id": 215238134366076928,
-                "name": "ThorTheFallen"
-            },
-            "content": "Thefallen"
-        },
-        {
-            "author": {
-                "id": 456226577798135808,
-                "name": "Deleted User"
-            },
-            "content": "Gackel"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "sent you both <@!215238134366076928> <@456226577798135808>"
-        },
-        {
-            "author": {
-                "id": 316728168432140298,
-                "name": "Willywasher"
-            },
-            "content": "williewasher"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "says player not found"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "nvm had to capitalize the W"
-        },
-        {
-            "author": {
-                "id": 316728168432140298,
-                "name": "Willywasher"
-            },
-            "content": "Williewasher"
-        },
-        {
-            "author": {
-                "id": 229986947727228941,
-                "name": "Isley"
-            },
-            "content": "yeah sent it out"
-        },
-        {
-            "author": {
-                "id": 316728168432140298,
-                "name": "Willywasher"
-            },
-            "content": "sorry missed cap"
-        },
-        {
-            "author": {
-                "id": 241346316209225728,
-                "name": "Flankr"
-            },
-            "content": "Flankr"
-        },
-        {
-            "author": {
-                "id": 140277614953627648,
-                "name": "Perversia"
-            },
-            "content": "Perversia"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "Give me 25 mins and I'll be on my pc"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "<@261972352470876160> are you online?"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "im going to bed but i can hop on for a sec to add them"
-        },
-        {
-            "author": {
-                "id": 456226577798135808,
-                "name": "Deleted User"
-            },
-            "content": "Clvt"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "both sent"
-        },
-        {
-            "author": {
-                "id": 456226577798135808,
-                "name": "Deleted User"
-            },
-            "content": "\u2764\ufe0f"
-        },
-        {
-            "author": {
-                "id": 178296722638766080,
-                "name": "c0met"
-            },
-            "content": "Hobanwashburne"
-        },
-        {
-            "author": {
-                "id": 651202210180628505,
-                "name": "iNFiDeL"
-            },
-            "content": "IGN: Infidel"
-        },
-        {
-            "author": {
-                "id": 317365178045825024,
-                "name": "J0hnnyBlazer"
-            },
-            "content": "Johnnyb"
-        },
-        {
-            "author": {
-                "id": 136081787678883840,
-                "name": "HORORMAN"
-            },
-            "content": "Hororman"
-        },
-        {
-            "author": {
-                "id": 456226577798135808,
-                "name": "Deleted User"
-            },
-            "content": "Aboleth"
-        },
-        {
-            "author": {
-                "id": 751191418667663402,
-                "name": "jac"
-            },
-            "content": "."
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "nobody added you?"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "ok invite sent to <@!751191418667663402> and <@456226577798135808>"
-        },
-        {
-            "author": {
-                "id": 456226577798135808,
-                "name": "Deleted User"
-            },
-            "content": "gettin on to accept"
-        },
-        {
-            "author": {
-                "id": 456226577798135808,
-                "name": "Deleted User"
-            },
-            "content": "bana na"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "<@361449026169733121> whats yours again^"
-        },
-        {
-            "author": {
-                "id": 361449026169733121,
-                "name": "Maxime"
-            },
-            "content": "Oups srry i forget"
-        },
-        {
-            "author": {
-                "id": 361449026169733121,
-                "name": "Maxime"
-            },
-            "content": "Ztsuke"
-        },
-        {
-            "author": {
-                "id": 261972352470876160,
-                "name": "TurnIP"
-            },
-            "content": "tyty"
-        },
-        {
-            "author": {
-                "id": 333888913431199746,
-                "name": "Mr Volts"
-            },
-            "content": "I'll add you when I get to my pc in a bit"
-        },
-        {
-            "author": {
-                "id": 361449026169733121,
-                "name": "Maxime"
-            },
-            "content": "no pb ty ^^"
-        },
-        {
-            "author": {
-                "id": 361449026169733121,
-                "name": "Maxime"
-            },
-            "content": "for the ptu my pseudo is : Ztsukeptu"
-        },
-        {
-            "author": {
-                "id": 882785890613743656,
-                "name": "severalofthemoney"
-            },
-            "content": "PTU: Dropdatabaseendoskeleton"
-        },
-        {
-            "author": {
-                "id": 882785890613743656,
-                "name": "severalofthemoney"
-            },
-            "content": "live: Keloid"
-        }
-    ]
-}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<@&733592888587452436> post your ingame names here once you make em"}
+{"author_id": 135072845196689408, "author_name": "nenu", "content": "Santi"}
+{"author_id": 93299542836912128, "author_name": "Darenkel", "content": "Darenkel"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "Dantian"}
+{"author_id": 328628044749078538, "author_name": "Pergatory", "content": "Feature"}
+{"author_id": 328628044749078538, "author_name": "Pergatory", "content": "is space right now"}
+{"author_id": 328628044749078538, "author_name": "Pergatory", "content": "Got it ty"}
+{"author_id": 284725145182928896, "author_name": "Sherquack Honks", "content": "CoffeeKnight"}
+{"author_id": 265156994409693185, "author_name": "yup", "content": "Yup"}
+{"author_id": 267029265009213456, "author_name": "InqWiper", "content": "Inqwiper"}
+{"author_id": 284725145182928896, "author_name": "Sherquack Honks", "content": "Coffeeknight"}
+{"author_id": 245974663665025025, "author_name": "LeFFeDenEcklige", "content": "bigdickjohnson"}
+{"author_id": 245974663665025025, "author_name": "LeFFeDenEcklige", "content": "leifoman"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "Trueturnip"}
+{"author_id": 326411880539226124, "author_name": "Mito", "content": "Mito"}
+{"author_id": 214665550440300544, "author_name": "Tagarik", "content": "Tagarik ~~but I doubt that i can be in two companies/factions at the same time~~"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "No but noted"}
+{"author_id": 197852274893127685, "author_name": "Renz", "content": "Renz"}
+{"author_id": 499578171067203584, "author_name": "AssasinGecko", "content": "Gecko"}
+{"author_id": 160821693567205376, "author_name": "Stradh", "content": "Stradh"}
+{"author_id": 160821423428861952, "author_name": "Halpachino", "content": "Halpachino"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "Vortus"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Mrvolts"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Name changed to Volts"}
+{"author_id": 102220482471800832, "author_name": "tango", "content": "Sedi"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "<@!229986947727228941> can you post your name again, Vortus doesn't appear to exist"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "wut"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "oh nvm its showing now"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "invite sent"}
+{"author_id": 245974663665025025, "author_name": "LeFFeDenEcklige", "content": "seems like the person ahs to be online, so ping me or Dantian for invites"}
+{"author_id": 201373222392954880, "author_name": "Zog", "content": "Zog"}
+{"author_id": 205760564046069761, "author_name": "AssIn9", "content": "Asinine, Atlashost (p2p high end connection for mitigation of ddos)"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "Mordrack"}
+{"author_id": 227129167106277376, "author_name": "Viribus Ego Vis", "content": "Viribusegovis\n\nIf I knew how I'd change to Viribus"}
+{"author_id": 456226577798135808, "author_name": "Deleted User", "content": "Jj"}
+{"author_id": 325245519037333504, "author_name": "Blackhawk", "content": "Blackhawkx (for now)"}
+{"author_id": 325245519037333504, "author_name": "Blackhawk", "content": "asinine"}
+{"author_id": 269927543795220480, "author_name": "Raw Beef", "content": "Seyeco"}
+{"author_id": 266169747719061515, "author_name": "Imperiul", "content": "Imperiul"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@!340725653164916737> would you mind?"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@!328628044749078538>"}
+{"author_id": 353250620678864896, "author_name": "TinyTim", "content": "Spiritnor \ud83d\ude04"}
+{"author_id": 494202013211557888, "author_name": "Cause & effecT", "content": "Hey any advice or ok with Cause"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "Cause is your name ingame?"}
+{"author_id": 337812602753122305, "author_name": "SomeGreenBoi", "content": "Caligae"}
+{"author_id": 353250620678864896, "author_name": "TinyTim", "content": "still havn't gotten any invitation ingame btw \ud83d\ude04"}
+{"author_id": 340725653164916737, "author_name": "Dantian", "content": "Just sent you one"}
+{"author_id": 189121589692989441, "author_name": "MaarrS", "content": "MaarrS"}
+{"author_id": 318238971945811980, "author_name": "Guthixwolf", "content": "Guthix"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@!318238971945811980> both sent"}
+{"author_id": 189121589692989441, "author_name": "MaarrS", "content": "\u2764\ufe0f"}
+{"author_id": 216710056031420426, "author_name": "Boonana", "content": "Boonana"}
+{"author_id": 300557660875653121, "author_name": "SaltMinion", "content": "ragnr"}
+{"author_id": 164164302121467904, "author_name": "Yourshadow", "content": "Yourshadowq"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@!216710056031420426> <@!300557660875653121> <@!164164302121467904> sent invites to you 3"}
+{"author_id": 300557660875653121, "author_name": "SaltMinion", "content": "Thanks."}
+{"author_id": 216710056031420426, "author_name": "Boonana", "content": "I havent received anything yet \ud83d\ude42"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "ohh?"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "player not found"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Player not found"}
+{"author_id": 300557660875653121, "author_name": "SaltMinion", "content": "lol"}
+{"author_id": 300557660875653121, "author_name": "SaltMinion", "content": "what"}
+{"author_id": 300557660875653121, "author_name": "SaltMinion", "content": "Hang on"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "player not found]"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "player not found"}
+{"author_id": 216710056031420426, "author_name": "Boonana", "content": "Hm strange. Thats my starbase name \ud83d\ude04"}
+{"author_id": 300557660875653121, "author_name": "SaltMinion", "content": "Mine is correct, just double checked"}
+{"author_id": 300557660875653121, "author_name": "SaltMinion", "content": "Ragnr"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "ehh"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "maybe it's cap sensitive"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "it is capital sensitive"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "my bad"}
+{"author_id": 300557660875653121, "author_name": "SaltMinion", "content": "Got it"}
+{"author_id": 216710056031420426, "author_name": "Boonana", "content": "Got mine ty"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "all invites sent sorry for delay guys"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "business is booming"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "a month ago I thought we'd be struggling for 10 xD"}
+{"author_id": 104998281716711424, "author_name": "Redflash", "content": "Redflash"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "Zehtuka"}
+{"author_id": 140183856970989568, "author_name": "fabo", "content": "fabo"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@110135050112090112> <@151410465874903042> would you mind adding your in-game names here?"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "So we can add you to the company"}
+{"author_id": 151410465874903042, "author_name": "Meraun", "content": "Meraun"}
+{"author_id": 220959033895550976, "author_name": "Zehtuka", "content": "Will need inv as well"}
+{"author_id": 151410465874903042, "author_name": "Meraun", "content": "Johnnyseven has well Johnnyseven"}
+{"author_id": 151410465874903042, "author_name": "Meraun", "content": "we left the old placeholder Company"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "ill invite you in a sec"}
+{"author_id": 290579868502982656, "author_name": "Mordrack", "content": "<:based:854343428502061086>"}
+{"author_id": 636638343852982303, "author_name": "Hoenheim", "content": "Hoenheim"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "sent"}
+{"author_id": 153084734287773696, "author_name": "Chosenman", "content": "Chosenman"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "player not found"}
+{"author_id": 153084734287773696, "author_name": "Chosenman", "content": "Wildape"}
+{"author_id": 153084734287773696, "author_name": "Chosenman", "content": "sorry"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@!691667818466508820> are you in the company?"}
+{"author_id": 468079005862592513, "author_name": "sacul2345", "content": "Sacul"}
+{"author_id": 341406176652558356, "author_name": "zub", "content": "Zub"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<@!333888913431199746>"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "on it"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@!341406176652558356> <@!468079005862592513> sent the invite, welcome to the team"}
+{"author_id": 468079005862592513, "author_name": "sacul2345", "content": "got it"}
+{"author_id": 413411119152234507, "author_name": "Spongebob", "content": "Spongebob"}
+{"author_id": 316728168432140298, "author_name": "Willywasher", "content": "williewasher"}
+{"author_id": 215238134366076928, "author_name": "ThorTheFallen", "content": "Thefallen"}
+{"author_id": 456226577798135808, "author_name": "Deleted User", "content": "Gackel"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "sent you both <@!215238134366076928> <@456226577798135808>"}
+{"author_id": 316728168432140298, "author_name": "Willywasher", "content": "williewasher"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "says player not found"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "nvm had to capitalize the W"}
+{"author_id": 316728168432140298, "author_name": "Willywasher", "content": "Williewasher"}
+{"author_id": 229986947727228941, "author_name": "Isley", "content": "yeah sent it out"}
+{"author_id": 316728168432140298, "author_name": "Willywasher", "content": "sorry missed cap"}
+{"author_id": 241346316209225728, "author_name": "Flankr", "content": "Flankr"}
+{"author_id": 140277614953627648, "author_name": "Perversia", "content": "Perversia"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "Give me 25 mins and I'll be on my pc"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "<@261972352470876160> are you online?"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "im going to bed but i can hop on for a sec to add them"}
+{"author_id": 456226577798135808, "author_name": "Deleted User", "content": "Clvt"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "both sent"}
+{"author_id": 456226577798135808, "author_name": "Deleted User", "content": "\u2764\ufe0f"}
+{"author_id": 178296722638766080, "author_name": "c0met", "content": "Hobanwashburne"}
+{"author_id": 651202210180628505, "author_name": "iNFiDeL", "content": "IGN: Infidel"}
+{"author_id": 317365178045825024, "author_name": "J0hnnyBlazer", "content": "Johnnyb"}
+{"author_id": 136081787678883840, "author_name": "HORORMAN", "content": "Hororman"}
+{"author_id": 456226577798135808, "author_name": "Deleted User", "content": "Aboleth"}
+{"author_id": 751191418667663402, "author_name": "jac", "content": "."}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "nobody added you?"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "ok invite sent to <@!751191418667663402> and <@456226577798135808>"}
+{"author_id": 456226577798135808, "author_name": "Deleted User", "content": "gettin on to accept"}
+{"author_id": 456226577798135808, "author_name": "Deleted User", "content": "bana na"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "<@361449026169733121> whats yours again^"}
+{"author_id": 361449026169733121, "author_name": "Maxime", "content": "Oups srry i forget"}
+{"author_id": 361449026169733121, "author_name": "Maxime", "content": "Ztsuke"}
+{"author_id": 261972352470876160, "author_name": "TurnIP", "content": "tyty"}
+{"author_id": 333888913431199746, "author_name": "Mr Volts", "content": "I'll add you when I get to my pc in a bit"}
+{"author_id": 361449026169733121, "author_name": "Maxime", "content": "no pb ty ^^"}
+{"author_id": 361449026169733121, "author_name": "Maxime", "content": "for the ptu my pseudo is : Ztsukeptu"}
+{"author_id": 882785890613743656, "author_name": "severalofthemoney", "content": "PTU: Dropdatabaseendoskeleton"}
+{"author_id": 882785890613743656, "author_name": "severalofthemoney", "content": "live: Keloid"}
