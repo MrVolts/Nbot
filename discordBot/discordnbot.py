@@ -76,6 +76,7 @@ async def save_messages():
                     continue
                 data = {
                     "author_id": message.author.id,
+                    "message_id": message.id,
                     "author_name": message.author.name,
                     "content": message.content,
                 }
@@ -93,7 +94,7 @@ async def save_messages():
                     os.makedirs(f"{default_save_path}channels")
                 # save or append the messageblock to a file, with each new item in the list being a new line
                 
-                with open(f"{default_save_path}channels/{channel.name}.json", "a") as f:
+                with open(f"{default_save_path}channels/{channel.name}.jsonl", "a") as f:
                         for m in messageblock:
                             f.write(json.dumps(m)+"\n")
                 
