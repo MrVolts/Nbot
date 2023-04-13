@@ -79,7 +79,7 @@ def save_user_messages(ids,names,no_messages,all_messages,usernames):
             if cat == usernames[ids[i]][0].lower() or cat == "#":
                 if not os.path.exists(f"{default_save_path}users/{cat}"):
                     os.makedirs(f"{default_save_path}users/{cat}")
-                with open(f"{default_save_path}users/{cat}/{usernames[ids[i]]}|{str(ids[i])[0:3]}.jsonl", "a") as f:
+                with open(f"{default_save_path}users/{usernames[ids[i]]}|{str(ids[i])[0:3]}.jsonl", "a") as f:
                     for line in all_messages:
                         data = json.loads(line)
                         if data["author_id"] == ids[i]:
