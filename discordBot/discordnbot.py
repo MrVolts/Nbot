@@ -12,7 +12,9 @@ import pickler
 from dotenv import load_dotenv
 import pinecone
 
+import idconvert
 
+print(idconvert.convert_to_zid("1"))
 # guild number, of the server the bot is on
 GUILDNO = 711625884771287151
 # update frequency in seconds, how often the bot checks for new messages to add to database

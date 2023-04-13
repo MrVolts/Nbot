@@ -138,11 +138,11 @@ def main():
         namespace = os.path.dirname(os.path.relpath(input_filepath, source_directory)).split(os.path.sep)[0]
 
         # Process the input data and save it in the required format
-        global_chunk_counter = process_data_and_save_output(data, user_data_folder, output_filename, source_name, namespace=namespace, index=index)
+        should_update_message_id, global_chunk_counter = process_data_and_save_output(data, user_data_folder, output_filename, source_name, namespace=namespace, index=index)
         
         write_global_chunk_counter(global_chunk_counter)
 
-        if data:
+        if data and should_update_message_id:
             write_channel_message_ids(source_name, last_processed_message_id)
             
         # Delete the processed input file
@@ -152,6 +152,9 @@ def process_data_and_save_output(data, user_folder, output_filename, source_name
     if isinstance(data, str):
         data = [{'text': data}]
         
+    min_first_chunk_size = 450
+    should_update_message_id = True
+    
     global_chunk_counter = read_global_chunk_counter()
         
     chunks = []
@@ -174,9 +177,34 @@ def process_data_and_save_output(data, user_folder, output_filename, source_name
         length_function=tiktoken_len,
         separators=["},","\n\n", "\n", " ", ""]
     )
+    
+    # Merge chunks that are smaller than min_chunk_size
+    def merge_small_chunks(chunks, min_chunk_size, length_function):
+        merged_chunks = []
+        for chunk in chunks:
+            chunk_size = length_function(chunk)
+            if merged_chunks and length_function(merged_chunks[-1]) < min_chunk_size:
+                merged_chunks[-1] += chunk
+            else:
+                merged_chunks.append(chunk)
+        return merged_chunks
         
     for idx, record in enumerate(tqdm(data)):
         chunk_texts = text_splitter.split_text(record['text'])
+        chunk_texts = merge_small_chunks(chunk_texts, 250, tiktoken_len)
+
+        # Check if chunk_texts is empty and skip processing the file
+        if not chunk_texts:
+            print(f"Skipped file: {source_name} (No chunks)")
+            should_update_message_id = False
+            continue
+
+        # Skip processing the file if the first chunk is smaller than the threshold
+        if tiktoken_len(chunk_texts[0]) < min_first_chunk_size:
+            print(f"Skipped file: {source_name} (First chunk is too small)")
+            should_update_message_id = False
+            continue
+
         for i, t in enumerate(chunk_texts):
             chunk = {
                 'id': str(uuid4()),
@@ -213,15 +241,18 @@ def process_data_and_save_output(data, user_folder, output_filename, source_name
 
     print(f"File: {output_filename}")
     sample_chunk = 5
-    try:
-        print("5 random elements in chunks list:")
-        for i in random.sample(range(len(chunks)), sample_chunk):
-            print(f"{i+1}. ID: {chunks[i]['id']}, source: {chunks[i]['source']}, Chunk: {chunks[i]['chunk']}, Date: {chunks[i]['date']}, Namespace: {chunks[i]['namespace']}, Index: {chunks[i]['index']}\nText:\n{chunks[i]['text']}\n")
-    except ValueError:
-        print(f"There are less than {sample_chunk} elements in the chunks list.")
-        
-    return global_chunk_counter
 
+    if len(chunks) > 0:
+        try:
+            print("5 random elements in chunks list:\n")
+            for i in random.sample(range(len(chunks)), sample_chunk):
+                print(f"{i+1}. ID: {chunks[i]['id']}, source: {chunks[i]['source']}, Chunk: {chunks[i]['chunk']}, Date: {chunks[i]['date']}, Namespace: {chunks[i]['namespace']}, Index: {chunks[i]['index']}\nText:\n{chunks[i]['text']}\n")
+        except ValueError:
+            print(f"There are less than {sample_chunk} elements in the chunks list.\n")
+    else:
+        print("The chunks list is empty.\n")
+
+    return should_update_message_id, global_chunk_counter
     
 
 if __name__ == "__main__":

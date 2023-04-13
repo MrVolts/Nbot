@@ -1,9 +1,13 @@
 import os
 import json
+import time
+import datetime
+updateinterval = 600
 default_save_path="../sourcesnbot/"
 CATERGORYS = "abcdefghijklmnopqrstuvwxyz#"
 matching_lines = []
 all_messages = []
+
 #list the files in default_save_path/GUILDNO
 
 try:
@@ -29,7 +33,7 @@ except FileNotFoundError:
 def discover_files(default_save_path,last_read_line):
     all_messages = []
     for file in os.listdir(f"{default_save_path}channels"):
-        print(f"reading {file}...")
+        #print(f"reading {file}...")
         
         #if the file is a json file
         if file.endswith(".jsonl"):
@@ -40,7 +44,10 @@ def discover_files(default_save_path,last_read_line):
             with open(f"{default_save_path}channels/{file}", "r") as f:
                 #read the file into a list of lines
                 lines = f.readlines()
-            all_messages.extend(lines[lineno:])
+            try:
+                all_messages.extend(lines[lineno:])
+            except IndexError:
+                pass
             last_read_line[file] = len(lines)
     #save the last read line
     with open("last_lines.json", "w") as f:
@@ -75,26 +82,33 @@ def save_user_messages(ids,names,no_messages,all_messages,usernames):
             usernames[ids[i]] = names[i]
         if "/" in usernames[ids[i]]:
             usernames[ids[i]] = usernames[ids[i]].replace("/","-")
-        for cat in CATERGORYS:
-            if cat == usernames[ids[i]][0].lower() or cat == "#":
-                if not os.path.exists(f"{default_save_path}users/{cat}"):
-                    os.makedirs(f"{default_save_path}users/{cat}")
-                with open(f"{default_save_path}users/{usernames[ids[i]]}|{str(ids[i])[0:3]}.jsonl", "a") as f:
-                    for line in all_messages:
-                        data = json.loads(line)
-                        if data["author_id"] == ids[i]:
-                            f.write(json.dumps(data)+"\n")
-                break
+    sorted_messages = {}
+    for line in all_messages:
+        data = json.loads(line)
+        if not data["author_id"] in sorted_messages:
+            sorted_messages[data["author_id"]] = [data]
+        else:
+            sorted_messages[data["author_id"]].append(data)
+    ft=0
+    for author_id in ids:
+        with open(f"{default_save_path}users/{usernames[author_id]}|{str(author_id)[0:3]}.jsonl", "a") as f:
+            for line in sorted_messages[author_id]:
+             
+                f.write(json.dumps(line)+"\n")
+            
     with open("usernames.json", "w") as f:
         f.write(json.dumps(usernames))
+    
 
         
     
-
-m = discover_files(default_save_path,last_lines)
-print(f"found {len(m)} messages")
-ids,names,messages = get_ids(m)
-print("found {} users".format(len(ids)))
-create_folders()
-save_user_messages(ids,names,messages,m,usernames)
-print("done")
+while True:
+    print("updating at",datetime.datetime.fromtimestamp(time.time()).strftime('%d-%m-%Y %H:%M:%S'))
+    m = discover_files(default_save_path,last_lines)
+    print(f"found {len(m)} messages")
+    ids,names,messages = get_ids(m)
+    print("found {} users".format(len(ids)))
+    create_folders()
+    save_user_messages(ids,names,messages,m,usernames)
+    print("done")
+    time.sleep(updateinterval)
