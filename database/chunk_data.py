@@ -152,7 +152,6 @@ def process_data_and_save_output(data, user_folder, output_filename, source_name
     if isinstance(data, str):
         data = [{'text': data}]
         
-    min_first_chunk_size = 450
     should_update_message_id = True
     
     global_chunk_counter = read_global_chunk_counter()
@@ -200,8 +199,8 @@ def process_data_and_save_output(data, user_folder, output_filename, source_name
             continue
 
         # Skip processing the file if the first chunk is smaller than the threshold
-        if tiktoken_len(chunk_texts[0]) < min_first_chunk_size:
-            print(f"Skipped file: {source_name} (First chunk is too small)")
+        if len(chunk_texts) < 2:
+            print(f"Skipped file: {source_name} (Less than two chunks)")
             should_update_message_id = False
             continue
 

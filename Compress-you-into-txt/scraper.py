@@ -4,15 +4,18 @@ import time
 import datetime
 updateinterval = 600
 default_save_path="../sourcesnbot/"
-CATERGORYS = "abcdefghijklmnopqrstuvwxyz#"
+default_save_path_data = "../sourcesnbot/data/"
 matching_lines = []
 all_messages = []
+
+if not os.path.exists(default_save_path_data):
+    os.makedirs(default_save_path_data)
 
 #list the files in default_save_path/GUILDNO
 
 try:
     #open a file that has a dictionary of all the channels and the last line number read and store as dict
-    with open("last_lines.json", "r") as f:
+    with open(f"{default_save_path_data}last_lines.json", "r") as f:
         last_lines = json.loads(f.read())
         
 except FileNotFoundError:
@@ -21,7 +24,7 @@ except FileNotFoundError:
 
 try:
     #open a file that has a dictionary of all the channels and the last line number read and store as dict
-    with open("usernames.json", "r") as f:
+    with open(f"{default_save_path_data}usernames.json", "r") as f:
         usernames = json.loads(f.read())
         
 except FileNotFoundError:
@@ -50,7 +53,7 @@ def discover_files(default_save_path,last_read_line):
                 pass
             last_read_line[file] = len(lines)
     #save the last read line
-    with open("last_lines.json", "w") as f:
+    with open(f"{default_save_path_data}last_lines.json", "w") as f:
         f.write(json.dumps(last_read_line))
     return all_messages
 
@@ -96,7 +99,7 @@ def save_user_messages(ids,names,no_messages,all_messages,usernames):
              
                 f.write(json.dumps(line)+"\n")
             
-    with open("usernames.json", "w") as f:
+    with open(f"{default_save_path_data}usernames.json", "w") as f:
         f.write(json.dumps(usernames))
     
 

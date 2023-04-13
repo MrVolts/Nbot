@@ -14,7 +14,7 @@ import pinecone
 
 import idconvert
 
-print(idconvert.convert_to_zid("1"))
+
 # guild number, of the server the bot is on
 GUILDNO = 711625884771287151
 # update frequency in seconds, how often the bot checks for new messages to add to database
@@ -49,7 +49,7 @@ except:
 
 async def save_messages():
     global last_update, added_channelids
-    # if server has more than this number of channels being monitered, increase this number.
+    # if server has more than this number of channels being monitered, increase this number
     channelupdatetime = list([last_update]*1000)
     while True:
         time_updated_readable = datetime.datetime.fromtimestamp(time.time()).strftime('%d-%m-%Y %H:%M:%S')
@@ -61,7 +61,6 @@ async def save_messages():
                 messages = await channel.history(limit=1000000, after=datetime.datetime.fromtimestamp(channelupdatetime[added_channelids[GUILDNO].index(id)])).flatten()
                 channelupdatetime[added_channelids[GUILDNO].index(
                     id)] = time.time()
-
             except discord.Forbidden as e:
                 # Handle the specific Forbidden exception
                 print("channel "+channel.name +
@@ -78,6 +77,7 @@ async def save_messages():
                     continue
                 data = {
                     "author_id": message.author.id,
+                    "zid": idconvert.convert_to_zid(message.author.id),
                     "message_id": message.id,
                     "author_name": message.author.name,
                     "content": message.content,
