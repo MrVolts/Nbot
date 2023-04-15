@@ -39,7 +39,7 @@ except:
 # attempt to load the time the bot last checked for new messages
 try:
     # load the number of the last time there was an update
-    with open("number.txt", "r") as f:
+    with open(f"{default_save_path}data/number.txt", "r") as f:
         last_update = float(f.read())#-1000000
 except:
     last_update = 1509586802
@@ -77,7 +77,7 @@ async def save_messages():
                     continue
                 data = {
                     "author_id": message.author.id,
-                    "zid": idconvert.convert_to_zid(message.author.id),
+                    "id": idconvert.convert_to_zid(message.author.id),
                     "message_id": message.id,
                     "author_name": message.author.name,
                     "content": message.content,
@@ -141,7 +141,7 @@ def save_channels(channels, ids, GUILDNO):
 
 def save_number(number):
     # save the time the bot last checked for new messages in plain text without using pickler
-    with open("number.txt", "w") as f:
+    with open(f"{default_save_path}data/number.txt", "w") as f:
         f.write(str(number))
 
 
