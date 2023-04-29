@@ -1,7 +1,8 @@
+#w
 import json
 import os
 #create a default save path in home/ubuntu
-default_save_path = "/home/ubuntu/NomadsAI/sourcesnbot"
+default_save_path = "/home/ubuntu/Nbot/sourcesnbot"
 def convert_to_36(original):
     if original == 0:
         return "0"

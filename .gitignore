@@ -7,3 +7,4 @@ database/data/
 database/channel_message_ids.txt
 database/pinecone_blocks.db
 database/global_chunk_counter.txt
+uni_work/

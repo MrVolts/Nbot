@@ -17,6 +17,9 @@ pip install git-lfs
 huggingface-cli login
 pip install huggingface_hub
 pip install python-dateutil
+google search
+pip install google-api-python-client
+pip install "protobuf==3.19.5"
 
 How to use:
 

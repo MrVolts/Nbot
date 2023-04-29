@@ -11,6 +11,8 @@ pinecone_environment = os.getenv("PINECONE_ENVIRONMENT")
 pinecone_index_name = os.getenv("PINECONE_INDEX_NAME")
 
 # Set up the OpenAI API key and Pinecone environment
+# Add a namespace variable (change this as needed)
+namespace = "Networking"
 openai.api_key = openai_api_key
 pinecone.init(api_key=pinecone_api_key, environment=pinecone_environment)
 index_name = pinecone_index_name
@@ -21,8 +23,8 @@ def create_embedding(text):
     res = openai.Embedding.create(input=[text], engine=embed_model)
     return res['data'][0]['embedding']
 
-def query_pinecone(embedding, top_k=4, include_metadata=True):
-    res = index.query(embedding, top_k=top_k, include_metadata=include_metadata)
+def query_pinecone(embedding, top_k=4, include_metadata=True, namespace=None):
+    res = index.query(embedding, top_k=top_k, include_metadata=include_metadata, namespace=namespace)
     return res['matches']
 
 def extract_keywords(question):
@@ -45,7 +47,7 @@ def ask_question(query):
     xq = create_embedding(keyword_query)
 
     # Retrieve relevant contexts from Pinecone
-    matches = query_pinecone(xq)
+    matches = query_pinecone(xq, namespace=namespace)
 
     # Augment the query with the retrieved contexts
     contexts = [item['metadata']['text'] for item in matches]
@@ -76,7 +78,7 @@ def ask_question(query):
 
 # Example usage
 query = """
-Who are you?
+What is the Network core?
 """
 response = ask_question(query)
 print("Answer" + "\n" + response)

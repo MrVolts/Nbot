@@ -11,6 +11,7 @@ import discord.utils
 import pickler
 from dotenv import load_dotenv
 import pinecone
+import re
 
 import idconvert
 
@@ -47,6 +48,15 @@ except:
 # function that runs constantly to update the database
 
 
+def find_pattern_indices(s):
+    pattern = r"<@!?(\d{6,})>"
+    match = re.search(pattern, s)
+    if match:
+        return match.start(1), match.end(1)
+    else:
+        return 0  # Pattern not found
+
+
 async def save_messages():
     global last_update, added_channelids
     # if server has more than this number of channels being monitered, increase this number
@@ -58,7 +68,7 @@ async def save_messages():
             channel = client.get_channel(id)
             messageblock = []
             try:
-                messages = await channel.history(limit=1000000, after=datetime.datetime.fromtimestamp(channelupdatetime[added_channelids[GUILDNO].index(id)])).flatten()
+                messages = await channel.history(limit=10000000000, after=datetime.datetime.fromtimestamp(channelupdatetime[added_channelids[GUILDNO].index(id)])).flatten()
                 channelupdatetime[added_channelids[GUILDNO].index(
                     id)] = time.time()
             except discord.Forbidden as e:
@@ -82,9 +92,12 @@ async def save_messages():
                     "author_name": message.author.name,
                     "content": message.content,
                 }
+                pattern = find_pattern_indices(data["content"])
+                while pattern:
+                        data["content"] = str(data["content"][:pattern[0]]+idconvert.convert_to_zid(data["content"][pattern[0]:pattern[1]])+data["content"][pattern[1]:])
+                        pattern = find_pattern_indices(data["content"])
                 if data["content"]:
                     messageblock.append(data)
-                    
             if messageblock:
                 
                 
@@ -296,9 +309,9 @@ async def process_message(message):
 
         # Generate and send the response
         await generate_response(message, text)
-    except:
+    except Exception as e:
         # If an error occurs, send a message to the Discord channel
-        await message.channel.send("Sorry, something went wrong. Please try again later.")
+        await message.channel.send("Sorry, something went wrong. Please try again later.\n\n" + str(e))
 
 
 async def process_context(message, slash_command=False):
@@ -315,9 +328,9 @@ async def process_context(message, slash_command=False):
 
         # Generate and send the response
         await generate_response(message, text,)
-    except:
+    except Exception as e:
         # If an error occurs, send a message to the Discord channel
-        await message.channel.send("Sorry, something went wrong. Please try again later.")
+        await message.channel.send("Sorry, something went wrong. Please try again later.\n\n" + str(e))
 
 
 # Function for generating and sending responses
@@ -422,7 +435,6 @@ async def addchannel(
 
         else:
             if addchannel == "allchannels":
-                print("here")
                 added_channelids[GUILDNO] = list(channel_ids[GUILDNO][1:])
                 added_channels[GUILDNO] = list(channel_names[GUILDNO][1:])
             else:

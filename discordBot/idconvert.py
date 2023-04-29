@@ -1,6 +1,6 @@
 import json
 #create a default save path in home/ubuntu
-default_save_path = "/home/ubuntu/NomadsAI/sourcesnbot/data"
+default_save_path = "/home/ubuntu/Nbot/sourcesnbot/data"
 def convert_to_36(original):
     if original == 0:
         return "00000"
@@ -24,11 +24,11 @@ except FileNotFoundError:
 def convert_to_zid(original):
     global ids
     try:
-        return ids[original]
+        return ids[str(original)]
     except KeyError:
         zid = convert_to_36(ids["#idnumber"])
         ids["#idnumber"] += 1
-        ids[original] = zid
+        ids[str(original)] = zid
         with open(f"/{default_save_path}/ids.json", "w") as f:
             f.write(json.dumps(ids))
         pass
